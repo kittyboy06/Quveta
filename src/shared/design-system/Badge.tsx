@@ -1,6 +1,15 @@
 import React from "react";
 
-export type BadgeVariant = "success" | "warning" | "danger" | "info" | "neutral" | "purple";
+export type BadgeVariant =
+  | "success"
+  | "warning"
+  | "danger"
+  | "info"
+  | "neutral"
+  | "purple"
+  | "outline"
+  | "destructive"
+  | "secondary";
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   variant?: BadgeVariant;
@@ -21,6 +30,9 @@ export function Badge({
     info: "bg-blue-50 text-blue-800 border-blue-200",
     purple: "bg-brand-50 text-brand-800 border-brand-200",
     neutral: "bg-slate-100 text-slate-700 border-slate-200",
+    outline: "bg-transparent text-slate-700 border-slate-200",
+    destructive: "bg-rose-50 text-rose-800 border-rose-200",
+    secondary: "bg-slate-100 text-slate-700 border-slate-200",
   };
 
   return (

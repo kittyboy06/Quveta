@@ -42,9 +42,9 @@ export function calculateReadinessScore(input: ReadinessCalculationInput): Readi
 
   // --- 1. BUDGET HEALTH (Weight: 25%) ---
   let budgetScore = 100;
-  const targetBudget = event.total_budget;
+  const targetBudget = event.target_budget || event.total_budget || 0;
   const totalAllocated = budgetLineItems.reduce(
-    (sum, item) => sum + (item.actual_amount ?? item.estimated_amount),
+    (sum, item: any) => sum + (item.planned_amount ?? item.actual_amount ?? item.estimated_amount ?? 0),
     0
   );
 
@@ -60,7 +60,7 @@ export function calculateReadinessScore(input: ReadinessCalculationInput): Readi
   }
 
   const overBudgetItems = budgetLineItems.filter(
-    (i) => i.actual_amount && i.actual_amount > i.estimated_amount
+    (i: any) => i.actual_amount != null && i.actual_amount > (i.estimated_amount ?? i.planned_amount ?? 0)
   );
   if (overBudgetItems.length > 0) {
     budgetScore = Math.max(0, budgetScore - overBudgetItems.length * 5);
@@ -100,7 +100,9 @@ export function calculateReadinessScore(input: ReadinessCalculationInput): Readi
   // --- 3. VENDOR & QUOTE HEALTH (Weight: 20%) ---
   let vendorScore = 80;
   const bookedVendors = vendors.filter((v) => v.status === "BOOKED");
-  const pendingQuotes = quotations.filter((q) => q.status === "PENDING_REVIEW");
+  const pendingQuotes = quotations.filter(
+    (q: any) => q.status === "PENDING_REVIEW" || q.status === "UNDER_REVIEW" || q.status === "RECEIVED"
+  );
 
   if (vendors.length === 0) {
     vendorScore = 30;
@@ -122,7 +124,7 @@ export function calculateReadinessScore(input: ReadinessCalculationInput): Readi
   // --- 4. GUEST & RSVP HEALTH (Weight: 15%) ---
   let rsvpScore = 100;
   const totalGuests = guests.length;
-  const isConfirmed = (g: SeedGuest) => g.rsvp_status === "CONFIRMED" || g.rsvp_status === "ATTENDING";
+  const isConfirmed = (g: any) => g.rsvp_status === "CONFIRMED" || g.rsvp_status === "ATTENDING";
   const confirmedGuests = guests.filter(isConfirmed).length;
   const declinedGuests = guests.filter((g) => g.rsvp_status === "DECLINED").length;
   const responded = confirmedGuests + declinedGuests;
@@ -270,7 +272,7 @@ export function generateProactiveInsights(input: ReadinessCalculationInput): Eve
 
   // 2. Unseated Guests
   const attendingGuests = guests.filter(
-    (g) => g.rsvp_status === "CONFIRMED" || g.rsvp_status === "ATTENDING"
+    (g: any) => g.rsvp_status === "CONFIRMED" || g.rsvp_status === "ATTENDING"
   );
   const seatedGuestIds = new Set(assignments.map((a) => a.guest_id));
   const unseatedGuests = attendingGuests.filter((g) => !seatedGuestIds.has(g.id));
@@ -299,7 +301,9 @@ export function generateProactiveInsights(input: ReadinessCalculationInput): Eve
   }
 
   // 3. Pending Vendor Quotations
-  const pendingQuotes = quotations.filter((q) => q.status === "PENDING_REVIEW");
+  const pendingQuotes = quotations.filter(
+    (q: any) => q.status === "PENDING_REVIEW" || q.status === "UNDER_REVIEW" || q.status === "RECEIVED"
+  );
   if (pendingQuotes.length > 0) {
     insights.push({
       id: `ins-quote-${Date.now()}-3`,
@@ -319,12 +323,13 @@ export function generateProactiveInsights(input: ReadinessCalculationInput): Eve
   }
 
   // 4. Budget Variance Check
+  const effectiveTarget = event.target_budget || event.total_budget || 0;
   const totalAllocated = budgetLineItems.reduce(
-    (sum, item) => sum + (item.actual_amount ?? item.estimated_amount),
+    (sum, item: any) => sum + (item.planned_amount ?? item.actual_amount ?? item.estimated_amount ?? 0),
     0
   );
-  if (event.total_budget > 0 && totalAllocated > event.total_budget) {
-    const diff = totalAllocated - event.total_budget;
+  if (effectiveTarget > 0 && totalAllocated > effectiveTarget) {
+    const diff = totalAllocated - effectiveTarget;
     insights.push({
       id: `ins-budget-${Date.now()}-4`,
       event_id: event.id,

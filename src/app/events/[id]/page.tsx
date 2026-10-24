@@ -51,9 +51,7 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
 
   const unreadNotifs = notifications.filter((n) => !n.read).length;
   const bookedVendors = vendors.filter((v) => v.status === "BOOKED").length;
-  const attendingGuests = guests.filter(
-    (g) => g.rsvp_status === "ATTENDING" || g.rsvp_status === "CONFIRMED"
-  ).length;
+  const attendingGuests = guests.filter((g) => g.rsvp_status === "ATTENDING").length;
 
   const totalPlannedMinor = lineItems.reduce((acc, li) => acc + li.planned_amount, 0);
   const targetBudgetMoney = createMoney(event.target_budget, event.currency);

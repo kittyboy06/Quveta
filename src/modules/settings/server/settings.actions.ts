@@ -9,6 +9,7 @@ import {
 } from "../domain/settings.schema";
 import { runDiagnosticChecks } from "../domain/diagnostic.runner";
 import { SeedEventSettings, SeedAuditLog } from "@/shared/db/seed-data";
+import { env } from "@/shared/config/env";
 
 export async function getEventSettingsAction(eventId: string): Promise<SeedEventSettings | null> {
   return db.getEventSettings(eventId);
@@ -25,7 +26,7 @@ export async function updateEventSettingsAction(
       event_id: eventId,
       currency: validated.currency,
       timezone: validated.timezone,
-      default_catering_budget_per_guest: validated.default_catering_budget_per_guest,
+      default_catering_budget_per_guest: validated.default_catering_budget_per_guest ?? 0,
       notifications_enabled: validated.notifications_enabled,
       ai_features_enabled: validated.ai_features_enabled,
       privacy_mode: validated.privacy_mode,
@@ -39,7 +40,7 @@ export async function updateEventSettingsAction(
       entity_type: "EVENT_SETTINGS",
       entity_id: eventId,
       actor: "Organizer",
-      details: `Saved currency=${validated.currency}, timezone=${validated.timezone}`,
+      details: { message: `Saved currency=${validated.currency}, timezone=${validated.timezone}` },
     });
 
     safeRevalidatePath(`/events/${eventId}`);
@@ -54,7 +55,7 @@ export async function resetSampleEventAction(
   eventId: string
 ): Promise<{ success: boolean; error?: string }> {
   try {
-    db.resetSampleEvent(eventId);
+    db.resetEventToSeed(eventId);
 
     db.createAuditLog({
       event_id: eventId,
@@ -62,7 +63,7 @@ export async function resetSampleEventAction(
       entity_type: "EVENT",
       entity_id: eventId,
       actor: "Evaluator / Demo Toolkit",
-      details: "Restored all 15 modules to pristine competition seed benchmark.",
+      details: { message: "Restored all 15 modules to pristine competition seed benchmark." },
     });
 
     safeRevalidatePath(`/events/${eventId}`);
@@ -91,7 +92,7 @@ export async function runSystemDiagnosticAction(
   const notifications = db.getNotificationsByEventId(eventId);
 
   const duration = Math.round((performance.now() - start) * 10) / 10;
-  const isGeminiConfigured = Boolean(process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY);
+  const isGeminiConfigured = env.isGeminiConfigured();
 
   return runDiagnosticChecks({
     event,
@@ -124,7 +125,7 @@ export async function exportEventBackupAction(
       categories: db.getBudgetCategoriesByEventId(eventId),
       budgetLineItems: db.getBudgetLineItemsByEventId(eventId),
       tasks: db.getTasksByEventId(eventId),
-      taskDependencies: db.getTaskDependenciesByEventId(eventId),
+      taskDependencies: db.getDependenciesByEventId(eventId),
       vendors: db.getVendorsByEventId(eventId),
       quotations: db.getQuotationsByEventId(eventId),
       runSheetItems: db.getRunSheetItemsByEventId(eventId),

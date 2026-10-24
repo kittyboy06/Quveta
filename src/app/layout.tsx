@@ -2,10 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/shared/design-system/Navbar";
 import { Sidebar } from "@/shared/design-system/Sidebar";
+import { env } from "@/shared/config/env";
 
 export const metadata: Metadata = {
-  title: "Quveta — AI Event Planning & Adaptive Budget Platform",
-  description: "Intelligent celebration and event planning web application with adaptive budget simulation and dependency-aware timelines.",
+  title: `${env.APP_NAME} — ${env.APP_DESCRIPTION}`,
+  description:
+    "Intelligent celebration and event planning web application with adaptive budget simulation and dependency-aware timelines.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

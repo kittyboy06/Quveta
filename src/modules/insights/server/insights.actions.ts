@@ -14,8 +14,7 @@ import {
   generateProactiveInsights,
 } from "../domain/readiness.calculator";
 import { safeRevalidatePath } from "@/shared/utils/cache";
-
-const apiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || "";
+import { env } from "@/shared/config/env";
 
 export async function getReadinessScoreAction(eventId: string): Promise<ReadinessScore | null> {
   const event = db.getEventById(eventId);
@@ -85,8 +84,9 @@ export async function queryAiDecisionAssistantAction(
     const tables = db.getSeatingTablesByEventId(eventId);
     const assignments = db.getSeatingAssignmentsByEventId(eventId);
 
+    const targetBudget = event.target_budget || event.total_budget || 0;
     const totalAllocated = budgetLineItems.reduce(
-      (sum, item) => sum + (item.actual_amount ?? item.estimated_amount),
+      (sum, item: any) => sum + (item.planned_amount ?? item.actual_amount ?? item.estimated_amount ?? 0),
       0
     );
     const isConfirmed = (g: any) => g.rsvp_status === "CONFIRMED" || g.rsvp_status === "ATTENDING";
@@ -116,7 +116,7 @@ export async function queryAiDecisionAssistantAction(
       {
         module: "Budget",
         label: "Target Budget",
-        value: `${event.currency} ${(event.total_budget / 100).toLocaleString()}`,
+        value: `${event.currency} ${(targetBudget / 100).toLocaleString()}`,
         href: `/events/${eventId}/budget`,
       },
       {
@@ -146,7 +146,7 @@ export async function queryAiDecisionAssistantAction(
     ];
 
     const suggestedActions: SuggestedAction[] = [];
-    if (totalAllocated > event.total_budget) {
+    if (totalAllocated > targetBudget) {
       suggestedActions.push({
         label: "Run Budget Reduction Simulator",
         actionType: "SIMULATE",
@@ -177,11 +177,11 @@ export async function queryAiDecisionAssistantAction(
 
     let answerText = "";
 
-    if (apiKey && apiKey.trim() !== "") {
+    if (env.isGeminiConfigured() && env.ENABLE_AI_FEATURES) {
       try {
-        const genAI = new GoogleGenerativeAI(apiKey);
+        const genAI = new GoogleGenerativeAI(env.GEMINI_API_KEY);
         const model = genAI.getGenerativeModel({
-          model: "gemini-2.5-flash",
+          model: env.GEMINI_MODEL,
         });
 
         const systemPrompt = `You are Quveta's Senior Event Strategy & Decision Copilot.
@@ -189,12 +189,12 @@ You have access to the complete live state of this event. Provide concise, exper
 Always cite authoritative figures from the data. Never invent facts.
 
 EVENT STATE:
-- Event: "${event.title}" (${event.event_type}) on ${event.start_date}
+- Event: "${event.title}" (${event.event_type}) on ${event.start_date || event.event_date}
 - Overall Readiness Score: ${readiness.overallScore}/100 (${readiness.status})
-- Target Budget: ₹${(event.total_budget / 100).toLocaleString()}
-- Allocated / Spent: ₹${(totalAllocated / 100).toLocaleString()} (Variance: ₹${((event.total_budget - totalAllocated) / 100).toLocaleString()})
+- Target Budget: ₹${(targetBudget / 100).toLocaleString()}
+- Allocated / Spent: ₹${(totalAllocated / 100).toLocaleString()} (Variance: ₹${((targetBudget - totalAllocated) / 100).toLocaleString()})
 - Tasks: ${tasks.length} total, ${completedTasks} completed, ${overdueTasks.length} overdue (${overdueTasks.map((t) => t.title).join(", ") || "none"})
-- Vendors: ${vendors.length} logged, ${vendors.filter((v) => v.status === "BOOKED").length} booked, ${quotations.filter((q) => q.status === "PENDING_REVIEW").length} quotes pending review
+- Vendors: ${vendors.length} logged, ${vendors.filter((v) => v.status === "BOOKED").length} booked, ${quotations.filter((q: any) => q.status === "PENDING_REVIEW" || q.status === "UNDER_REVIEW").length} quotes pending review
 - Guests & RSVP: ${guests.length} invited, ${confirmedGuests} confirmed, ${declinedGuests} declined, ${unrespondedGuests} no response
 - Seating: ${tables.length} tables, ${seatedCount} seated, ${unseatedCount} unseated confirmed guests
 
@@ -207,7 +207,7 @@ User Question: "${query}"`;
         answerText = generateDeterministicAssistantReply(query, {
           eventTitle: event.title,
           currency: event.currency,
-          targetBudget: event.total_budget,
+          targetBudget,
           allocatedSpend: totalAllocated,
           readinessScore: readiness.overallScore,
           overdueTasksCount: overdueTasks.length,
@@ -221,7 +221,7 @@ User Question: "${query}"`;
       answerText = generateDeterministicAssistantReply(query, {
         eventTitle: event.title,
         currency: event.currency,
-        targetBudget: event.total_budget,
+        targetBudget,
         allocatedSpend: totalAllocated,
         readinessScore: readiness.overallScore,
         overdueTasksCount: overdueTasks.length,

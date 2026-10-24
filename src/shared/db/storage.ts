@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { env } from "../config/env";
 import {
   INITIAL_SEEDED_EVENTS,
   INITIAL_SEEDED_CATEGORIES,
@@ -87,8 +88,10 @@ export interface DatabaseState {
   auditLogs: SeedAuditLog[];
 }
 
-const DATA_DIR = path.resolve(process.cwd(), "data");
-const DB_FILE = path.resolve(DATA_DIR, "quveta.db.json");
+const DB_FILE = path.isAbsolute(env.DATABASE_STORAGE_PATH)
+  ? env.DATABASE_STORAGE_PATH
+  : path.resolve(process.cwd(), env.DATABASE_STORAGE_PATH);
+const DATA_DIR = path.dirname(DB_FILE);
 
 function getInitialState(): DatabaseState {
   return {
@@ -116,17 +119,28 @@ function getInitialState(): DatabaseState {
   };
 }
 
+let memoryCache: DatabaseState | null = null;
+
 function ensureDbFile(): DatabaseState {
+  if (memoryCache) {
+    return memoryCache;
+  }
+
   try {
     if (!fs.existsSync(DATA_DIR)) {
       fs.mkdirSync(DATA_DIR, { recursive: true });
     }
     if (!fs.existsSync(DB_FILE)) {
       const initial = getInitialState();
-      fs.writeFileSync(DB_FILE, JSON.stringify(initial, null, 2), "utf-8");
+      saveDb(initial);
       return initial;
     }
     const raw = fs.readFileSync(DB_FILE, "utf-8");
+    if (!raw || raw.trim().length === 0) {
+      const initial = getInitialState();
+      saveDb(initial);
+      return initial;
+    }
     const parsed = JSON.parse(raw);
 
     // Backfill any missing arrays from initial state
@@ -160,17 +174,21 @@ function ensureDbFile(): DatabaseState {
       modified = true;
     }
 
+    memoryCache = state;
     if (modified) {
-      fs.writeFileSync(DB_FILE, JSON.stringify(state, null, 2), "utf-8");
+      saveDb(state);
     }
     return state;
   } catch (err) {
     console.error("Database initialization error:", err);
-    return getInitialState();
+    const fallback = getInitialState();
+    memoryCache = fallback;
+    return fallback;
   }
 }
 
 function saveDb(state: DatabaseState): void {
+  memoryCache = state;
   try {
     if (!fs.existsSync(DATA_DIR)) {
       fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -249,6 +267,14 @@ export const db = {
     state.categories.push(newCategory);
     saveDb(state);
     return newCategory;
+  },
+
+  getBudgetLineItemsByEventId: (eventId: string): SeedLineItem[] => {
+    return ensureDbFile().lineItems.filter((li) => li.event_id === eventId);
+  },
+
+  getBudgetCategoriesByEventId: (eventId: string): SeedCategory[] => {
+    return ensureDbFile().categories.filter((c) => c.event_id === eventId);
   },
 
   getLineItemsByEventId: (eventId: string): SeedLineItem[] => {
@@ -581,7 +607,7 @@ export const db = {
   getRunSheetItemsByEventId: (eventId: string): SeedRunSheetItem[] => {
     return ensureDbFile().runSheetItems
       .filter((rs) => rs.event_id === eventId)
-      .sort((a, b) => a.sequence_order - b.sequence_order || a.scheduled_start_time.localeCompare(b.scheduled_start_time));
+      .sort((a, b) => (a.sequence_order ?? 0) - (b.sequence_order ?? 0) || (a.scheduled_start_time || "").localeCompare(b.scheduled_start_time || ""));
   },
 
   createRunSheetItem: (item: Omit<SeedRunSheetItem, "id" | "created_at">): SeedRunSheetItem => {
@@ -611,6 +637,10 @@ export const db = {
     state.runSheetIncidents = state.runSheetIncidents.filter((inc) => inc.run_sheet_item_id !== id);
     saveDb(state);
     return true;
+  },
+
+  getRunSheetIncidentsByEventId: (eventId: string): SeedRunSheetIncident[] => {
+    return ensureDbFile().runSheetIncidents.filter((inc) => inc.event_id === eventId);
   },
 
   getIncidentsByEventId: (eventId: string): SeedRunSheetIncident[] => {
@@ -842,6 +872,10 @@ export const db = {
   // ==========================================
   // MODULE 12: EVENT INSIGHTS
   // ==========================================
+  getEventInsightsByEventId: (eventId: string): SeedEventInsight[] => {
+    return ensureDbFile().eventInsights.filter((ins) => ins.event_id === eventId);
+  },
+
   getInsightsByEventId: (eventId: string): SeedEventInsight[] => {
     return ensureDbFile().eventInsights.filter((ins) => ins.event_id === eventId);
   },

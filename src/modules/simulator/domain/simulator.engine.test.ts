@@ -59,9 +59,9 @@ describe("Adaptive Budget Simulator Engine (Module 05 Signature Feature)", () =>
 
   it("dynamically recalculates remaining deficit when recommendations are accepted or rejected", () => {
     const baselineDeficit = fromMajorUnits(40000, "INR").amount;
-    const recs = [
-      { id: "r1", action: "Cut Decor", current_amount: 10000000, proposed_amount: 8000000, diff_amount: -2000000, trade_off_explanation: "", status: "ACCEPTED" as const },
-      { id: "r2", action: "Cut DJ", current_amount: 5000000, proposed_amount: 3500000, diff_amount: -1500000, trade_off_explanation: "", status: "ACCEPTED" as const },
+    const recs: Array<{ id: string; action: string; current_amount: number; proposed_amount: number; diff_amount: number; trade_off_explanation: string; status: "ACCEPTED" | "REJECTED" | "PENDING" }> = [
+      { id: "r1", action: "Cut Decor", current_amount: 10000000, proposed_amount: 8000000, diff_amount: -2000000, trade_off_explanation: "", status: "ACCEPTED" },
+      { id: "r2", action: "Cut DJ", current_amount: 5000000, proposed_amount: 3500000, diff_amount: -1500000, trade_off_explanation: "", status: "ACCEPTED" },
     ];
 
     // Both accepted: 20k + 15k = 35k saved out of 40k deficit -> 5k remaining deficit

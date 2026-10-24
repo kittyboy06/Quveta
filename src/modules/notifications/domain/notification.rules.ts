@@ -68,14 +68,15 @@ export function evaluateNotificationRules(input: EvaluationInput): NotificationI
   }
 
   // Rule 2: Budget Deficit
+  const target = event.total_budget || event.target_budget || 0;
   const totalAllocated = budgetLineItems.reduce(
-    (sum, item) => sum + (item.actual_amount ?? item.estimated_amount),
+    (sum, item: any) => sum + (item.planned_amount ?? item.actual_amount ?? item.estimated_amount ?? 0),
     0
   );
-  if (event.total_budget > 0 && totalAllocated > event.total_budget) {
+  if (target > 0 && totalAllocated > target) {
     const title = "Budget Overage Detected";
     if (!alreadyExists(title, "BUDGET")) {
-      const overage = totalAllocated - event.total_budget;
+      const overage = totalAllocated - target;
       newNotifications.push({
         id: `notif-auto-budget-${Date.now()}`,
         event_id: event.id,
@@ -91,7 +92,9 @@ export function evaluateNotificationRules(input: EvaluationInput): NotificationI
   }
 
   // Rule 3: Unresolved Operational Incidents
-  const openIncidents = incidents.filter((inc) => inc.status !== "RESOLVED");
+  const openIncidents = incidents.filter(
+    (inc: any) => !inc.resolved_time && inc.status !== "RESOLVED"
+  );
   if (openIncidents.length > 0) {
     const title = `${openIncidents.length} Unresolved Incident${openIncidents.length > 1 ? "s" : ""}`;
     if (!alreadyExists(title, "RUN_SHEET")) {

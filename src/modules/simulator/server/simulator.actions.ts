@@ -26,7 +26,7 @@ export async function runSimulationAction(
 
     const simulationResult = runSimulatorEngine(
       {
-        currentBudgetMinor: event.target_budget,
+        currentBudgetMinor: event.target_budget || event.total_budget || 0,
         currentGuestCount: event.guest_count,
         proposedBudgetMinor,
         proposedGuestCount: data.proposedGuestCount,

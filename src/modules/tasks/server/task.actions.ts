@@ -14,7 +14,7 @@ export async function getTimelineDataAction(eventId: string) {
   const dependencies = repository.getDependenciesByEventId(eventId);
 
   const derivedStates = deriveTaskStates(tasks, dependencies);
-  const scheduleImpact = evaluateScheduleImpact(tasks, dependencies, event.event_date);
+  const scheduleImpact = evaluateScheduleImpact(tasks, dependencies, event.event_date || new Date().toISOString().split("T")[0]);
 
   return {
     event,
@@ -74,7 +74,7 @@ export async function createTaskWithDependenciesAction(
       priority: data.priority,
       status: data.prerequisiteTaskIds && data.prerequisiteTaskIds.length > 0 ? "BLOCKED" : "READY",
       start_date: data.start_date || new Date().toISOString().split("T")[0],
-      due_date: data.due_date || event.event_date,
+      due_date: data.due_date || event.event_date || new Date().toISOString().split("T")[0],
       estimated_days: data.estimated_days || 1,
     });
 

@@ -50,10 +50,14 @@ export function runDiagnosticChecks(input: DiagnosticInput): DiagnosticReport {
   let orphanedCount = 0;
 
   // 1. Line item category & vendor checks
+  const catIds = new Set(categories.map((c) => c.id));
   const catNames = new Set(categories.map((c) => c.name));
-  for (const item of lineItems) {
-    if (!catNames.has(item.category)) {
-      issues.push(`Budget line item "${item.name}" references unlisted category "${item.category}"`);
+  for (const item of lineItems as any[]) {
+    const hasCat =
+      (item.category_id && catIds.has(item.category_id)) ||
+      (item.category && (catNames.has(item.category) || catIds.has(item.category)));
+    if (!hasCat) {
+      issues.push(`Budget line item "${item.title || item.name}" references unlisted category "${item.category_id || item.category}"`);
       orphanedCount++;
     }
   }

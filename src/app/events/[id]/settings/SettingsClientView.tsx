@@ -477,7 +477,11 @@ export function SettingsClientView({
                     </td>
                     <td className="py-2.5 px-3 text-slate-600">{log.entity_type}</td>
                     <td className="py-2.5 px-3 text-slate-600 max-w-md truncate">
-                      {log.details || "—"}
+                      {typeof log.details === "string"
+                        ? log.details
+                        : log.details
+                        ? JSON.stringify(log.details)
+                        : "—"}
                     </td>
                   </tr>
                 ))

@@ -10,6 +10,10 @@ export interface SeedEvent {
   location: string;
   guest_count: number;
   target_budget: number; // in minor units (paise)
+  total_budget?: number;
+  start_date?: string;
+  end_date?: string;
+  user_id?: string;
   currency: string;
   preferences: {
     theme?: string;
@@ -30,6 +34,7 @@ export interface SeedCategory {
   name: string;
   priority: "MUST_HAVE" | "HIGH" | "FLEXIBLE" | "LOW";
   allocated_amount: number; // minor units
+  target_ratio?: number;
 }
 
 export interface SeedLineItem {
@@ -42,19 +47,32 @@ export interface SeedLineItem {
   status: "ESTIMATED" | "QUOTED" | "COMMITTED" | "PAID";
   per_guest_unit_cost: number | null; // minor units
   notes?: string;
+  category?: string;
+  name?: string;
+  estimated_amount?: number;
+  actual_amount?: number;
+  created_at?: string;
+  updated_at?: string;
 }
+
+export type SeedBudgetCategory = SeedCategory;
+export type SeedBudgetLineItem = SeedLineItem;
+export type SeedVendorQuotation = SeedQuotation;
 
 export interface SeedTask {
   id: string;
   event_id: string;
   title: string;
-  description: string;
-  category: string;
+  description?: string;
+  category?: string;
   priority: "CRITICAL" | "HIGH" | "MEDIUM" | "LOW";
-  status: "NOT_STARTED" | "READY" | "IN_PROGRESS" | "BLOCKED" | "COMPLETED";
-  start_date: string;
+  status: "NOT_STARTED" | "READY" | "IN_PROGRESS" | "BLOCKED" | "COMPLETED" | "TODO";
+  start_date?: string;
   due_date: string;
-  estimated_days: number;
+  estimated_days?: number;
+  phase?: string;
+  created_at?: string;
+  updated_at?: string;
 }
 
 export interface SeedDependency {
@@ -69,9 +87,12 @@ export interface SeedVendor {
   event_id: string;
   name: string;
   category: "VENUE" | "CATERING" | "PHOTOGRAPHY" | "MUSIC_ENTERTAINMENT" | "DECOR" | "TRANSPORT" | "ATTIRE" | "OTHER";
-  contact_person: string;
-  email: string;
-  phone: string;
+  contact_person?: string;
+  email?: string;
+  phone?: string;
+  contact_name?: string;
+  contact_email?: string;
+  contact_phone?: string;
   website?: string;
   address?: string;
   status: "RESEARCHING" | "CONTACTED" | "QUOTED" | "CONTRACT_PENDING" | "BOOKED" | "DECLINED" | "ARCHIVED";
@@ -92,6 +113,7 @@ export interface SeedQuotation {
   event_id: string;
   quote_reference: string;
   amount_minor: number; // minor units
+  total_amount?: number;
   currency: string;
   status: "DRAFT" | "RECEIVED" | "UNDER_REVIEW" | "ACCEPTED" | "REJECTED" | "EXPIRED";
   valid_until: string;
@@ -154,13 +176,15 @@ export interface SeedGuest {
   email?: string;
   phone?: string;
   invitation_status: "NOT_SENT" | "SENT" | "DELIVERED" | "BOUNCED";
-  rsvp_status: "ATTENDING" | "DECLINED" | "TENTATIVE" | "NO_RESPONSE";
+  rsvp_status: "ATTENDING" | "DECLINED" | "TENTATIVE" | "NO_RESPONSE" | "CONFIRMED";
   plus_one_allowed: boolean;
   plus_one_name?: string;
+  plus_ones_count?: number;
   dietary_restrictions: string[]; // e.g. ['VEG', 'JAIN', 'GLUTEN_FREE', 'NUT_ALLERGY']
   accessibility_needs: string[]; // e.g. ['WHEELCHAIR', 'GROUND_FLOOR']
   notes?: string;
   created_at: string;
+  updated_at?: string;
 }
 
 // Module 10: Seating Tables & Assignments
@@ -170,9 +194,12 @@ export interface SeedSeatingTable {
   name: string;
   shape: "ROUND" | "RECTANGULAR" | "HEAD_TABLE";
   capacity: number;
-  location_zone: "STAGE_FRONT" | "MAIN_FLOOR" | "BALCONY" | "OUTDOOR";
-  accessibility_friendly: boolean;
+  location_zone?: "STAGE_FRONT" | "MAIN_FLOOR" | "BALCONY" | "OUTDOOR" | string;
+  accessibility_friendly?: boolean;
+  is_accessible?: boolean;
   notes?: string;
+  created_at?: string;
+  updated_at?: string;
 }
 
 export interface SeedSeatingAssignment {
@@ -181,6 +208,7 @@ export interface SeedSeatingAssignment {
   guest_id: string;
   seat_number?: number;
   assigned_at: string;
+  event_id?: string;
 }
 
 // Module 11: Invitations & Communications
@@ -244,7 +272,7 @@ export interface SeedEventSettings {
   event_id: string;
   currency: string;
   timezone: string;
-  default_catering_budget_per_guest: number;
+  default_catering_budget_per_guest?: number;
   notifications_enabled: boolean;
   ai_features_enabled: boolean;
   privacy_mode: boolean;

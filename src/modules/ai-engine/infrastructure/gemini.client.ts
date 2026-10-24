@@ -2,11 +2,10 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { EventPlan, EventPlanSchema } from "../domain/plan.schema";
 import { generateDeterministicPlan } from "../fallback/deterministic.planner";
 import { SeedEvent } from "@/shared/db/seed-data";
-
-const apiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || "";
+import { env } from "@/shared/config/env";
 
 export async function generateEventPlanWithAI(event: SeedEvent): Promise<{ plan: EventPlan; provider: "gemini" | "deterministic_fallback" }> {
-  if (!apiKey || apiKey.trim() === "") {
+  if (!env.isGeminiConfigured() || !env.ENABLE_AI_FEATURES) {
     return {
       plan: generateDeterministicPlan(event),
       provider: "deterministic_fallback",
@@ -14,9 +13,9 @@ export async function generateEventPlanWithAI(event: SeedEvent): Promise<{ plan:
   }
 
   try {
-    const genAI = new GoogleGenerativeAI(apiKey);
+    const genAI = new GoogleGenerativeAI(env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: env.GEMINI_MODEL,
       generationConfig: {
         responseMimeType: "application/json",
       },

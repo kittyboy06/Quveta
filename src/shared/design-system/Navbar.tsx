@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Sparkles, Calendar, PlusCircle, Bell, Search } from "lucide-react";
 import { Button } from "./Button";
 
@@ -8,8 +9,15 @@ export function Navbar() {
     <header className="sticky top-0 z-30 flex h-16 w-full items-center justify-between border-b border-slate-200/80 bg-white/95 px-4 sm:px-6 backdrop-blur">
       <div className="flex items-center gap-3">
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-brand-800 to-brand-600 flex items-center justify-center text-white shadow-sm">
-            <Sparkles className="w-5 h-5 text-brand-200" />
+          <div className="relative w-9 h-9 rounded-lg overflow-hidden shadow-sm border border-brand-100/50 flex-shrink-0 bg-brand-950">
+            <Image
+              src="/logo.png"
+              alt="Quveta Logo"
+              width={36}
+              height={36}
+              className="object-cover w-full h-full"
+              priority
+            />
           </div>
           <div>
             <span className="text-lg font-bold tracking-tight text-brand-950">Quveta</span>

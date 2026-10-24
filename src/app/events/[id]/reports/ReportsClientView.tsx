@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   FileText,
   ArrowLeft,
@@ -157,7 +158,16 @@ export function ReportsClientView({ event, initialSnapshot }: ReportsClientViewP
         {/* Document Header */}
         <div className="border-b-2 border-slate-900 pb-6 mb-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2.5">
+              <div className="relative w-8 h-8 rounded-md overflow-hidden border border-slate-200 shadow-2xs bg-brand-950 flex-shrink-0">
+                <Image
+                  src="/logo.png"
+                  alt="Quveta"
+                  width={32}
+                  height={32}
+                  className="object-cover w-full h-full"
+                />
+              </div>
               <span className="text-xl font-black tracking-tight text-slate-900">QUVETA</span>
               <span className="text-xs uppercase tracking-widest text-indigo-600 font-bold border-l border-slate-300 pl-2">
                 Official Event Document

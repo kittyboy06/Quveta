@@ -22,12 +22,13 @@ export async function getReportSnapshotAction(
       const tables = db.getSeatingTablesByEventId(eventId);
       const assignments = db.getSeatingAssignmentsByEventId(eventId);
 
+      const eventBudget = event.target_budget || event.total_budget || 0;
       const totalAllocated = budgetItems.reduce(
-        (sum, item) => sum + (item.actual_amount ?? item.estimated_amount),
+        (sum, item: any) => sum + (item.planned_amount ?? item.actual_amount ?? item.estimated_amount ?? 0),
         0
       );
       const confirmedGuests = guests.filter(
-        (g) => g.rsvp_status === "CONFIRMED" || g.rsvp_status === "ATTENDING"
+        (g: any) => g.rsvp_status === "CONFIRMED" || g.rsvp_status === "ATTENDING"
       ).length;
       const completedTasks = tasks.filter((t) => t.status === "COMPLETED").length;
       const bookedVendors = vendors.filter((v) => v.status === "BOOKED").length;
@@ -36,12 +37,12 @@ export async function getReportSnapshotAction(
         reportType,
         eventId,
         title: `${event.title} - Executive Planning Summary`,
-        subtitle: `Master status briefing generated for ${event.event_type} on ${new Date(event.start_date).toLocaleDateString()}`,
+        subtitle: `Master status briefing generated for ${event.event_type} on ${new Date(event.start_date || event.event_date || Date.now()).toLocaleDateString()}`,
         generatedAt: now,
         summaryStats: [
           {
             label: "Target Budget",
-            value: `${event.currency} ${(event.total_budget / 100).toLocaleString()}`,
+            value: `${event.currency} ${(eventBudget / 100).toLocaleString()}`,
             subtext: `Committed: ${event.currency} ${(totalAllocated / 100).toLocaleString()}`,
           },
           {
@@ -65,9 +66,9 @@ export async function getReportSnapshotAction(
           [
             "Financial Control",
             `${event.currency} ${(totalAllocated / 100).toLocaleString()}`,
-            totalAllocated <= event.total_budget ? "ON TRACK" : "OVER BUDGET",
-            `${event.currency} ${(event.total_budget / 100).toLocaleString()}`,
-            totalAllocated <= event.total_budget
+            totalAllocated <= eventBudget ? "ON TRACK" : "OVER BUDGET",
+            `${event.currency} ${(eventBudget / 100).toLocaleString()}`,
+            totalAllocated <= eventBudget
               ? "Healthy buffer maintained"
               : "Review flexible items in budget simulator",
           ],
@@ -111,16 +112,18 @@ export async function getReportSnapshotAction(
       let totalEst = 0;
       let totalAct = 0;
 
-      const rows = items.map((item) => {
-        const est = item.estimated_amount / 100;
-        const act = (item.actual_amount ?? item.estimated_amount) / 100;
+      const rows = items.map((item: any) => {
+        const estVal = item.estimated_amount ?? item.planned_amount ?? 0;
+        const actVal = item.actual_amount ?? item.planned_amount ?? 0;
+        const est = estVal / 100;
+        const act = actVal / 100;
         const diff = est - act;
-        totalEst += item.estimated_amount;
-        totalAct += item.actual_amount ?? item.estimated_amount;
+        totalEst += estVal;
+        totalAct += actVal;
 
         return [
-          item.category,
-          item.name,
+          item.category || "General",
+          item.title || item.name || "Item",
           `${event.currency} ${est.toLocaleString()}`,
           `${event.currency} ${act.toLocaleString()}`,
           diff >= 0 ? `+${event.currency} ${diff.toLocaleString()}` : `-${event.currency} ${Math.abs(diff).toLocaleString()}`,
@@ -137,7 +140,7 @@ export async function getReportSnapshotAction(
         summaryStats: [
           {
             label: "Total Budget Target",
-            value: `${event.currency} ${(event.total_budget / 100).toLocaleString()}`,
+            value: `${event.currency} ${((event.target_budget || event.total_budget || 0) / 100).toLocaleString()}`,
           },
           {
             label: "Total Allocated Spend",
@@ -145,8 +148,8 @@ export async function getReportSnapshotAction(
           },
           {
             label: "Net Variance",
-            value: `${event.currency} ${((event.total_budget - totalAct) / 100).toLocaleString()}`,
-            subtext: totalAct <= event.total_budget ? "Under Target" : "Over Target",
+            value: `${event.currency} ${(((event.target_budget || event.total_budget || 0) - totalAct) / 100).toLocaleString()}`,
+            subtext: totalAct <= (event.target_budget || event.total_budget || 0) ? "Under Target" : "Over Target",
           },
         ],
         columns: ["Category", "Line Item", "Estimated Amount", "Actual Amount", "Variance", "Linked Vendor"],
@@ -194,7 +197,7 @@ export async function getReportSnapshotAction(
           {
             label: "Confirmed Attending",
             value: String(
-              guests.filter((g) => g.rsvp_status === "CONFIRMED" || g.rsvp_status === "ATTENDING").length
+              guests.filter((g: any) => g.rsvp_status === "CONFIRMED" || g.rsvp_status === "ATTENDING").length
             ),
           },
           { label: "Special Dietary Needs", value: String(guests.filter((g) => (g.dietary_restrictions || []).length > 0).length) },
@@ -245,7 +248,7 @@ export async function getReportSnapshotAction(
           tbl.name,
           tbl.shape,
           `${tblAssignments.length} / ${tbl.capacity}`,
-          tbl.is_accessible ? "Yes (Accessible)" : "Standard",
+          tbl.is_accessible || tbl.accessibility_friendly ? "Yes (Accessible)" : "Standard",
           dietarySummary,
           names,
         ];
@@ -260,7 +263,7 @@ export async function getReportSnapshotAction(
         summaryStats: [
           { label: "Total Tables", value: String(tables.length) },
           { label: "Total Seated", value: String(assignments.length) },
-          { label: "Accessible Tables", value: String(tables.filter((t) => t.is_accessible).length) },
+          { label: "Accessible Tables", value: String(tables.filter((t) => t.is_accessible || t.accessibility_friendly).length) },
         ],
         columns: ["Table Name", "Shape", "Occupancy", "Accessibility", "Catering Dietary Manifest", "Assigned Guests"],
         rows,
@@ -270,12 +273,12 @@ export async function getReportSnapshotAction(
     case "RUN_SHEET_CUES": {
       const cues = db.getRunSheetItemsByEventId(eventId);
 
-      const rows = cues.map((cue) => [
-        cue.start_time,
-        cue.end_time,
+      const rows = cues.map((cue: any) => [
+        cue.scheduled_start_time || cue.start_time || "—",
+        cue.scheduled_end_time || cue.end_time || "—",
         cue.title,
         cue.category,
-        cue.lead_person || "Lead Coordinator",
+        cue.responsible_person || cue.lead_person || "Lead Coordinator",
         cue.location || "Main Stage",
         cue.status,
         cue.notes || "—",
@@ -304,16 +307,17 @@ export async function getReportSnapshotAction(
       const rows = vendors.map((v) => {
         const vQuotes = quotations.filter((q) => q.vendor_id === v.id);
         const acceptedQuote = vQuotes.find((q) => q.status === "ACCEPTED");
+        const amountVal = acceptedQuote ? (acceptedQuote.total_amount || acceptedQuote.amount_minor || 0) : 0;
         const amountDisplay = acceptedQuote
-          ? `${event.currency} ${(acceptedQuote.total_amount / 100).toLocaleString()}`
+          ? `${event.currency} ${(amountVal / 100).toLocaleString()}`
           : "—";
 
         return [
           v.name,
           v.category,
-          v.contact_name || "—",
-          v.contact_email || "—",
-          v.contact_phone || "—",
+          v.contact_person || v.contact_name || "—",
+          v.email || v.contact_email || "—",
+          v.phone || v.contact_phone || "—",
           v.status,
           String(vQuotes.length),
           amountDisplay,

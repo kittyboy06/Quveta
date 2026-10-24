@@ -191,8 +191,9 @@ describe("Non-Negotiable Acceptance Test: End-to-End Core Workflow", () => {
       event_id: eventId,
       name: "Heritage Royal Caterers",
       category: "CATERING",
-      contact_name: "Vikram Mehta",
-      contact_email: "vikram@heritageroyal.com",
+      contact_person: "Vikram Mehta",
+      email: "vikram@heritageroyal.com",
+      phone: "+91 98765 43210",
       status: "CONTACTED",
     });
 
@@ -229,11 +230,11 @@ describe("Non-Negotiable Acceptance Test: End-to-End Core Workflow", () => {
     const cue1 = repository.createRunSheetItem({
       event_id: eventId,
       title: "Groom Baraat Arrival",
-      start_time: "17:00",
-      end_time: "18:00",
-      duration_minutes: 60,
+      scheduled_start_time: "17:00",
+      scheduled_end_time: "18:00",
+      sequence_order: 1,
       category: "CEREMONY",
-      lead_person: "Lead Coordinator",
+      responsible_person: "Lead Coordinator",
       location: "Main Entrance",
       status: "COMPLETED",
     });
@@ -241,11 +242,11 @@ describe("Non-Negotiable Acceptance Test: End-to-End Core Workflow", () => {
     const cue2 = repository.createRunSheetItem({
       event_id: eventId,
       title: "Varmala Stage Ceremony",
-      start_time: "18:00",
-      end_time: "18:45",
-      duration_minutes: 45,
+      scheduled_start_time: "18:00",
+      scheduled_end_time: "18:45",
+      sequence_order: 2,
       category: "CEREMONY",
-      lead_person: "Stage Manager",
+      responsible_person: "Stage Manager",
       location: "Grand Mandap",
       status: "IN_PROGRESS",
     });
@@ -261,6 +262,8 @@ describe("Non-Negotiable Acceptance Test: End-to-End Core Workflow", () => {
       last_name: "Kumar",
       email: "aadhav@example.com",
       rsvp_status: "ATTENDING",
+      invitation_status: "SENT",
+      plus_one_allowed: true,
       plus_ones_count: 1,
       dietary_restrictions: ["VEGETARIAN", "JAIN"],
       accessibility_needs: ["WHEELCHAIR"],
@@ -272,8 +275,11 @@ describe("Non-Negotiable Acceptance Test: End-to-End Core Workflow", () => {
       last_name: "Kaur",
       email: "simran@example.com",
       rsvp_status: "ATTENDING",
+      invitation_status: "SENT",
+      plus_one_allowed: false,
       plus_ones_count: 0,
       dietary_restrictions: ["GLUTEN_FREE"],
+      accessibility_needs: [],
     });
     expect(guest1.id).toBeDefined();
     expect(guest2.id).toBeDefined();
@@ -286,6 +292,8 @@ describe("Non-Negotiable Acceptance Test: End-to-End Core Workflow", () => {
       name: "Table 1 (VIP Front)",
       shape: "ROUND",
       capacity: 8,
+      location_zone: "Main Hall",
+      accessibility_friendly: true,
       is_accessible: true,
     });
 
@@ -300,7 +308,7 @@ describe("Non-Negotiable Acceptance Test: End-to-End Core Workflow", () => {
     const invDesign = repository.saveInvitationDesign({
       event_id: eventId,
       title: "Royal Heritage Wedding Invitation",
-      template_id: "ROYAL_GOLD",
+      template_id: "ELEGANT_WEDDING",
       headline: "Celebrate with Priya & Rohan",
       body_text: "Join us for an unforgettable evening at {{venue}} on {{date}}.",
       venue_name: "Taj West End, Bangalore",
@@ -309,7 +317,7 @@ describe("Non-Negotiable Acceptance Test: End-to-End Core Workflow", () => {
       primary_color: "#1E1B4B",
       accent_color: "#D97706",
     });
-    expect(invDesign.template_id).toBe("ROYAL_GOLD");
+    expect(invDesign.template_id).toBe("ELEGANT_WEDDING");
 
     // -------------------------------------------------------------
     // STEP 14: Module 12 - AI Event Insights & 5-Pillar Readiness Score
@@ -376,6 +384,9 @@ describe("Non-Negotiable Acceptance Test: End-to-End Core Workflow", () => {
     expect(diagReport?.relationalIntegrity.orphanedRecordsCount).toBe(0);
 
     const backupRes = await exportEventBackupAction(eventId);
+    if (!backupRes.success) {
+      console.error("Backup export error:", backupRes.error);
+    }
     expect(backupRes.success).toBe(true);
     expect(backupRes.jsonString).toContain("Heritage Royal Caterers");
     expect(backupRes.jsonString).toContain("Aadhav");
