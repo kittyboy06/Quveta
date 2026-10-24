@@ -26,6 +26,486 @@
         ]
       },
       "status": "planning",
+      "id": "evt-1792856945141-37nhs",
+      "created_at": "2026-10-24T15:49:05.141Z",
+      "updated_at": "2026-10-24T15:49:06.087Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792856917007-lkeji",
+      "created_at": "2026-10-24T15:48:37.007Z",
+      "updated_at": "2026-10-24T15:48:37.820Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792856844434-qimle",
+      "created_at": "2026-10-24T15:47:24.434Z",
+      "updated_at": "2026-10-24T15:47:24.899Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792856701467-yfzie",
+      "created_at": "2026-10-24T15:45:01.467Z",
+      "updated_at": "2026-10-24T15:45:02.145Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792856575427-4hmsw",
+      "created_at": "2026-10-24T15:42:55.427Z",
+      "updated_at": "2026-10-24T15:42:55.918Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792856479955-4q7sx",
+      "created_at": "2026-10-24T15:41:19.955Z",
+      "updated_at": "2026-10-24T15:41:20.442Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792856380349-donbw",
+      "created_at": "2026-10-24T15:39:40.349Z",
+      "updated_at": "2026-10-24T15:39:40.678Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792856056681-nbead",
+      "created_at": "2026-10-24T15:34:16.681Z",
+      "updated_at": "2026-10-24T15:34:17.072Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792855886285-izaob",
+      "created_at": "2026-10-24T15:31:26.285Z",
+      "updated_at": "2026-10-24T15:31:26.472Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792855771300-475kg",
+      "created_at": "2026-10-24T15:29:31.300Z",
+      "updated_at": "2026-10-24T15:29:31.523Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792855482752-h6gtn",
+      "created_at": "2026-10-24T15:24:42.752Z",
+      "updated_at": "2026-10-24T15:24:43.010Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792855447090-38k81",
+      "created_at": "2026-10-24T15:24:07.090Z",
+      "updated_at": "2026-10-24T15:24:07.335Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792855291559-tzwoo",
+      "created_at": "2026-10-24T15:21:31.559Z",
+      "updated_at": "2026-10-24T15:21:31.799Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792855041157-j2eht",
+      "created_at": "2026-10-24T15:17:21.157Z",
+      "updated_at": "2026-10-24T15:17:21.400Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792854933780-6h3d1",
+      "created_at": "2026-10-24T15:15:33.780Z",
+      "updated_at": "2026-10-24T15:15:34.021Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
+      "id": "evt-1792854896059-5nupy",
+      "created_at": "2026-10-24T15:14:56.059Z",
+      "updated_at": "2026-10-24T15:14:56.380Z"
+    },
+    {
+      "title": "Priya & Rohan's Sangeet & Wedding",
+      "event_type": "wedding",
+      "event_date": "2026-11-06",
+      "location": "Taj West End, Bangalore",
+      "guest_count": 200,
+      "target_budget": 65000000,
+      "currency": "INR",
+      "preferences": {
+        "theme": "Royal Marigold",
+        "mustHaves": [
+          "Authentic Catering Feast"
+        ],
+        "priorities": {
+          "Catering & Feast": "MUST_HAVE",
+          "Venue & Mandap": "HIGH",
+          "Floral & Decor": "FLEXIBLE"
+        },
+        "dietary": [
+          "Vegetarian & Jain Counter"
+        ],
+        "accessibility": [
+          "Wheelchair Ramp"
+        ]
+      },
+      "status": "planning",
       "id": "evt-1792851578547-r5863",
       "created_at": "2026-10-24T14:19:38.547Z",
       "updated_at": "2026-10-24T14:19:38.607Z"
@@ -154,8 +634,8 @@
         "atmosphere": "Warm, traditional, and festive"
       },
       "status": "planning",
-      "created_at": "2026-10-17T14:14:10.844Z",
-      "updated_at": "2026-10-23T14:14:10.844Z"
+      "created_at": "2026-10-17T15:49:04.121Z",
+      "updated_at": "2026-10-23T15:49:04.121Z"
     },
     {
       "id": "evt-hackathon-002",
@@ -194,48 +674,6 @@
     }
   ],
   "categories": [
-    {
-      "id": "cat-w-venue",
-      "event_id": "evt-wedding-001",
-      "name": "Venue & Mandap",
-      "priority": "HIGH",
-      "allocated_amount": 25000000
-    },
-    {
-      "id": "cat-w-catering",
-      "event_id": "evt-wedding-001",
-      "name": "Catering & Feast",
-      "priority": "MUST_HAVE",
-      "allocated_amount": 28000000
-    },
-    {
-      "id": "cat-w-photo",
-      "event_id": "evt-wedding-001",
-      "name": "Photography & Video",
-      "priority": "HIGH",
-      "allocated_amount": 11000000
-    },
-    {
-      "id": "cat-w-decor",
-      "event_id": "evt-wedding-001",
-      "name": "Floral & Decor",
-      "priority": "FLEXIBLE",
-      "allocated_amount": 8000000
-    },
-    {
-      "id": "cat-w-music",
-      "event_id": "evt-wedding-001",
-      "name": "Sound & DJ",
-      "priority": "LOW",
-      "allocated_amount": 4000000
-    },
-    {
-      "id": "cat-w-invites",
-      "event_id": "evt-wedding-001",
-      "name": "Invitations & Gifts",
-      "priority": "FLEXIBLE",
-      "allocated_amount": 4000000
-    },
     {
       "id": "cat-h-venue",
       "event_id": "evt-hackathon-002",
@@ -466,73 +904,835 @@
       "priority": "FLEXIBLE",
       "allocated_amount": 2400000,
       "id": "cat-1792851578558-41zs5"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792854896063-q3wvg"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792854896067-i6yze"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792854896070-ijq8l"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792854896074-wk6xe"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792854896085-8c7aw"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792854896093-jkjeb"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792854896103-p369s"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792854933787-8jo0a"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792854933793-6fz6q"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792854933798-8icx8"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792854933804-l7uef"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792854933813-uvg84"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792854933821-2b1vv"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792854933830-c2d28"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792855041162-vbbtz"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792855041166-79dv5"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792855041171-w3wwu"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792855041175-5knrp"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792855041180-cwnsq"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855041186-h85o3"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855041191-x0res"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792855291564-nvut7"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792855291567-wu320"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792855291571-f4cux"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792855291574-g0gd7"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792855291578-77ii6"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855291583-69n84"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855291587-22akl"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792855447098-13fl8"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792855447104-oqp5p"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792855447110-yx5eh"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792855447117-bokvk"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792855447124-0qzj6"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855447130-g3pxt"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855447136-dm4gg"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792855482758-1ip7b"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792855482763-lrug5"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792855482768-klltm"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792855482774-fopfj"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792855482780-4c6qv"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855482784-enwjv"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855482790-5jl2l"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792855771308-c4hvb"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792855771314-964rd"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792855771320-q7syb"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792855771328-080mp"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792855771334-7beeb"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855771342-1mku9"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855771348-h7b8p"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792855886290-3hpeo"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792855886294-ugl4y"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792855886300-nmkvl"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792855886305-xvwt2"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792855886310-a58op"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855886314-5p44j"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792855886317-653nu"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792856056690-bpxz7"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792856056696-sofg6"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792856056704-bg1ju"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792856056711-zaj4u"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792856056718-i4ktx"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856056726-crdbh"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856056734-9qwlg"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792856380361-s12zg"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792856380373-cm4wt"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792856380385-fe1s2"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792856380395-tbs51"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792856380406-rxo2p"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856380415-h6bz4"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856380426-7f6b1"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792856479965-p86es"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792856479979-4jht4"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792856479991-wdux2"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792856480003-b22a6"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792856480016-rrugl"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856480027-f2gpi"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856480037-vea3u"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792856575440-8t6gj"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792856575455-crbww"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792856575471-cyg29"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792856575487-e7p1m"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792856575501-nde97"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856575518-vmcis"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856575535-mwl7i"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792856701480-atmux"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792856701495-qj99q"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792856701517-x9ny3"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792856701541-rcxr8"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792856701555-oxhfs"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856701567-kh8a0"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856701585-y9i2t"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792856844446-mxnsu"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792856844458-g6ru5"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792856844474-whu38"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792856844488-yelws"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792856844507-zhaeu"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856844528-wga0o"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856844540-hz88r"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792856917022-2ri4j"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792856917039-96f2x"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792856917055-01an5"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792856917068-i0v1e"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792856917082-lk3i2"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856917109-h0sbs"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856917121-j8hsp"
+    },
+    {
+      "id": "cat-w-venue",
+      "event_id": "evt-wedding-001",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 25000000
+    },
+    {
+      "id": "cat-w-catering",
+      "event_id": "evt-wedding-001",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000
+    },
+    {
+      "id": "cat-w-photo",
+      "event_id": "evt-wedding-001",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11000000
+    },
+    {
+      "id": "cat-w-decor",
+      "event_id": "evt-wedding-001",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000
+    },
+    {
+      "id": "cat-w-music",
+      "event_id": "evt-wedding-001",
+      "name": "Sound & DJ",
+      "priority": "LOW",
+      "allocated_amount": 4000000
+    },
+    {
+      "id": "cat-w-invites",
+      "event_id": "evt-wedding-001",
+      "name": "Invitations & Gifts",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 4000000
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "name": "Catering & Feast",
+      "priority": "MUST_HAVE",
+      "allocated_amount": 28000000,
+      "id": "cat-1792856945172-evkzf"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "name": "Venue & Mandap",
+      "priority": "HIGH",
+      "allocated_amount": 24000000,
+      "id": "cat-1792856945299-tg8ox"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "name": "Photography & Video",
+      "priority": "HIGH",
+      "allocated_amount": 11200000,
+      "id": "cat-1792856945360-rb60m"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "name": "Floral & Decor",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 8000000,
+      "id": "cat-1792856945408-ixmau"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "name": "Sound, DJ & Music",
+      "priority": "LOW",
+      "allocated_amount": 2600000,
+      "id": "cat-1792856945472-pbaj9"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "name": "Invitations & Stationery",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856945487-o5oay"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "name": "Emergency Contingency",
+      "priority": "FLEXIBLE",
+      "allocated_amount": 2400000,
+      "id": "cat-1792856945515-77x3d"
     }
   ],
   "lineItems": [
-    {
-      "id": "li-w-1",
-      "event_id": "evt-wedding-001",
-      "category_id": "cat-w-venue",
-      "title": "Palace Hall 2-Day Booking",
-      "planned_amount": 25000000,
-      "cost_type": "FIXED",
-      "status": "COMMITTED",
-      "per_guest_unit_cost": null,
-      "notes": "Advance ₹50,000 paid"
-    },
-    {
-      "id": "li-w-2",
-      "event_id": "evt-wedding-001",
-      "category_id": "cat-w-catering",
-      "title": "Buffet Dinner & Live Counters",
-      "planned_amount": 28000000,
-      "cost_type": "VARIABLE",
-      "status": "ESTIMATED",
-      "per_guest_unit_cost": 140000,
-      "notes": "₹1,400 per guest for 200 guests"
-    },
-    {
-      "id": "li-w-3",
-      "event_id": "evt-wedding-001",
-      "category_id": "cat-w-photo",
-      "title": "Candid Photography & Cinematic Film",
-      "planned_amount": 11000000,
-      "cost_type": "FIXED",
-      "status": "QUOTED",
-      "per_guest_unit_cost": null,
-      "notes": "Vendor: Studio Memories"
-    },
-    {
-      "id": "li-w-4",
-      "event_id": "evt-wedding-001",
-      "category_id": "cat-w-decor",
-      "title": "Fresh Jasmine & Marigold Stage Setup",
-      "planned_amount": 8000000,
-      "cost_type": "VARIABLE",
-      "status": "ESTIMATED",
-      "per_guest_unit_cost": 40000,
-      "notes": "Can be simplified if budget contracts"
-    },
-    {
-      "id": "li-w-5",
-      "event_id": "evt-wedding-001",
-      "category_id": "cat-w-music",
-      "title": "Traditional Shehnai & Evening DJ Setup",
-      "planned_amount": 4000000,
-      "cost_type": "FIXED",
-      "status": "ESTIMATED",
-      "per_guest_unit_cost": null
-    },
-    {
-      "id": "li-w-6",
-      "event_id": "evt-wedding-001",
-      "category_id": "cat-w-invites",
-      "title": "Printed Eco-Friendly Invitations & Mithai Boxes",
-      "planned_amount": 4000000,
-      "cost_type": "VARIABLE",
-      "status": "ESTIMATED",
-      "per_guest_unit_cost": 20000
-    },
     {
       "id": "li-h-1",
       "event_id": "evt-hackathon-002",
@@ -682,81 +1882,715 @@
       "status": "ESTIMATED",
       "per_guest_unit_cost": null,
       "id": "li-1792851578579-dvdt4"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "category_id": "cat-1792854896067-i6yze",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792854896250-tt4hy"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "category_id": "cat-1792854896063-q3wvg",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792854896255-s9fx7"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "category_id": "cat-1792854896074-wk6xe",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792854896262-ziehg"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "category_id": "cat-1792854896085-8c7aw",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792854896270-lm8cw"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "category_id": "cat-1792854933793-6fz6q",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792854933911-awefn"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "category_id": "cat-1792854933787-8jo0a",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792854933918-yxg21"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "category_id": "cat-1792854933804-l7uef",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792854933922-pap57"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "category_id": "cat-1792854933813-uvg84",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792854933929-4js2o"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "category_id": "cat-1792855041166-79dv5",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855041263-zc2cg"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "category_id": "cat-1792855041162-vbbtz",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792855041305-y7g3c"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "category_id": "cat-1792855041175-5knrp",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855041310-myup6"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "category_id": "cat-1792855041180-cwnsq",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855041315-6devm"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "category_id": "cat-1792855291567-wu320",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855291722-87yf1"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "category_id": "cat-1792855291564-nvut7",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792855291727-m6qdo"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "category_id": "cat-1792855291574-g0gd7",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855291731-leamt"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "category_id": "cat-1792855291578-77ii6",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855291734-3yugm"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "category_id": "cat-1792855447104-oqp5p",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855447218-foi6z"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "category_id": "cat-1792855447098-13fl8",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792855447224-fei4w"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "category_id": "cat-1792855447117-bokvk",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855447229-m7tef"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "category_id": "cat-1792855447124-0qzj6",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855447241-7gnsv"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "category_id": "cat-1792855482763-lrug5",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855482905-ibk9d"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "category_id": "cat-1792855482758-1ip7b",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792855482917-jnmvb"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "category_id": "cat-1792855482774-fopfj",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855482925-2i5p7"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "category_id": "cat-1792855482780-4c6qv",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855482931-4bn10"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "category_id": "cat-1792855771314-964rd",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855771425-t5kgd"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "category_id": "cat-1792855771308-c4hvb",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792855771431-6z42q"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "category_id": "cat-1792855771328-080mp",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855771435-neai9"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "category_id": "cat-1792855771334-7beeb",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855771441-2dtgj"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "category_id": "cat-1792855886294-ugl4y",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855886399-ed55z"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "category_id": "cat-1792855886290-3hpeo",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792855886403-0evd3"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "category_id": "cat-1792855886305-xvwt2",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855886407-asoyz"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "category_id": "cat-1792855886310-a58op",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792855886411-dnpz7"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "category_id": "cat-1792856056696-sofg6",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856056861-l4mr1"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "category_id": "cat-1792856056690-bpxz7",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792856056873-k7w23"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "category_id": "cat-1792856056711-zaj4u",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856056887-xkv5f"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "category_id": "cat-1792856056718-i4ktx",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856056898-eddkg"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "category_id": "cat-1792856380373-cm4wt",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856380544-na62b"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "category_id": "cat-1792856380361-s12zg",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792856380552-rgn8r"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "category_id": "cat-1792856380395-tbs51",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856380561-9hnt8"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "category_id": "cat-1792856380406-rxo2p",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856380570-pj4ny"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "category_id": "cat-1792856479979-4jht4",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856480211-d1rnf"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "category_id": "cat-1792856479965-p86es",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792856480223-dc1r6"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "category_id": "cat-1792856480003-b22a6",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856480234-80g4o"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "category_id": "cat-1792856480016-rrugl",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856480247-9nuio"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "category_id": "cat-1792856575455-crbww",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856575706-1s8ks"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "category_id": "cat-1792856575440-8t6gj",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792856575719-q2cjn"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "category_id": "cat-1792856575487-e7p1m",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856575732-8ef2d"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "category_id": "cat-1792856575501-nde97",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856575744-m7l47"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "category_id": "cat-1792856701495-qj99q",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856701837-kj6zw"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "category_id": "cat-1792856701480-atmux",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792856701910-tc6sy"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "category_id": "cat-1792856701541-rcxr8",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856701926-o9lqy"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "category_id": "cat-1792856701555-oxhfs",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856701946-bou8e"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "category_id": "cat-1792856844458-g6ru5",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856844709-swa6h"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "category_id": "cat-1792856844446-mxnsu",
+      "title": "Royal Buffet Dinner",
+      "cost_type": "VARIABLE",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792856844722-6juo5",
+      "notes": "Vendor: Heritage Royal Caterers (Ref: undefined)"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "category_id": "cat-1792856844488-yelws",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856844737-tjewn"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "category_id": "cat-1792856844507-zhaeu",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856844753-5pez1"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "category_id": "cat-1792856917039-96f2x",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856917525-9d0oa"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "category_id": "cat-1792856917022-2ri4j",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 22000000,
+      "cost_type": "VARIABLE",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792856917543-4m1tz",
+      "notes": "Vendor: Heritage Royal Caterers (Ref: Q-HR-2026)"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "category_id": "cat-1792856917068-i0v1e",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856917557-4j4mi"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "category_id": "cat-1792856917082-lk3i2",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856917573-phbi7"
+    },
+    {
+      "id": "li-w-1",
+      "event_id": "evt-wedding-001",
+      "category_id": "cat-w-venue",
+      "title": "Palace Hall 2-Day Booking",
+      "planned_amount": 25000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "notes": "Advance ₹50,000 paid"
+    },
+    {
+      "id": "li-w-2",
+      "event_id": "evt-wedding-001",
+      "category_id": "cat-w-catering",
+      "title": "Buffet Dinner & Live Counters",
+      "planned_amount": 28000000,
+      "cost_type": "VARIABLE",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": 140000,
+      "notes": "₹1,400 per guest for 200 guests"
+    },
+    {
+      "id": "li-w-3",
+      "event_id": "evt-wedding-001",
+      "category_id": "cat-w-photo",
+      "title": "Candid Photography & Cinematic Film",
+      "planned_amount": 11000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "notes": "Vendor: LensCraft Studios"
+    },
+    {
+      "id": "li-w-4",
+      "event_id": "evt-wedding-001",
+      "category_id": "cat-w-decor",
+      "title": "Fresh Jasmine & Marigold Stage Setup",
+      "planned_amount": 8000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 40000,
+      "notes": "Can be simplified if budget contracts"
+    },
+    {
+      "id": "li-w-5",
+      "event_id": "evt-wedding-001",
+      "category_id": "cat-w-music",
+      "title": "Traditional Shehnai & Evening DJ Setup",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null
+    },
+    {
+      "id": "li-w-6",
+      "event_id": "evt-wedding-001",
+      "category_id": "cat-w-invites",
+      "title": "Printed Eco-Friendly Invitations & Mithai Boxes",
+      "planned_amount": 4000000,
+      "cost_type": "VARIABLE",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": 20000
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "category_id": "cat-1792856945299-tg8ox",
+      "title": "Main Banquet Hall",
+      "planned_amount": 35000000,
+      "cost_type": "FIXED",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856945813-zjup6"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "category_id": "cat-1792856945172-evkzf",
+      "title": "Royal Buffet Dinner",
+      "planned_amount": 22000000,
+      "cost_type": "VARIABLE",
+      "status": "COMMITTED",
+      "per_guest_unit_cost": 140000,
+      "id": "li-1792856945827-6czjh",
+      "notes": "Vendor: Heritage Royal Caterers (Ref: Q-HR-2026)"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "category_id": "cat-1792856945408-ixmau",
+      "title": "Stage Floral Decoration",
+      "planned_amount": 8000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856945843-nidt9"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "category_id": "cat-1792856945472-pbaj9",
+      "title": "Evening DJ & Sound Rig",
+      "planned_amount": 4000000,
+      "cost_type": "FIXED",
+      "status": "ESTIMATED",
+      "per_guest_unit_cost": null,
+      "id": "li-1792856945854-3apw9"
     }
   ],
   "tasks": [
-    {
-      "id": "tsk-w-1",
-      "event_id": "evt-wedding-001",
-      "title": "Confirm Palace Hall Booking Deposit",
-      "description": "Pay remaining 25% booking deposit to secure the 2-day slot.",
-      "category": "Venue",
-      "priority": "CRITICAL",
-      "status": "COMPLETED",
-      "start_date": "2026-10-14",
-      "due_date": "2026-10-22",
-      "estimated_days": 2
-    },
-    {
-      "id": "tsk-w-2",
-      "event_id": "evt-wedding-001",
-      "title": "Finalize Seating Layout with Hall Manager",
-      "description": "Arrange 200 round-table seating with central aisle and elderly ramp access.",
-      "category": "Venue",
-      "priority": "HIGH",
-      "status": "READY",
-      "start_date": "2026-10-29",
-      "due_date": "2026-11-13",
-      "estimated_days": 3
-    },
-    {
-      "id": "tsk-w-3",
-      "event_id": "evt-wedding-001",
-      "title": "Catering Menu Tasting Session",
-      "description": "Taste live counter starters and finalize sweets menu with head chef.",
-      "category": "Catering",
-      "priority": "HIGH",
-      "status": "READY",
-      "start_date": "2026-11-03",
-      "due_date": "2026-11-18",
-      "estimated_days": 1
-    },
-    {
-      "id": "tsk-w-4",
-      "event_id": "evt-wedding-001",
-      "title": "Lock Final Headcount with Caterer",
-      "description": "Confirm exact guest count based on RSVPs for ingredient ordering.",
-      "category": "Catering",
-      "priority": "CRITICAL",
-      "status": "BLOCKED",
-      "start_date": "2027-01-22",
-      "due_date": "2027-02-06",
-      "estimated_days": 2
-    },
-    {
-      "id": "tsk-w-5",
-      "event_id": "evt-wedding-001",
-      "title": "Approve Mandap Floral Concept",
-      "description": "Review 3D floral sketches and select marigold/rose combination.",
-      "category": "Decoration",
-      "priority": "MEDIUM",
-      "status": "IN_PROGRESS",
-      "start_date": "2026-11-08",
-      "due_date": "2026-11-28",
-      "estimated_days": 5
-    },
-    {
-      "id": "tsk-w-6",
-      "event_id": "evt-wedding-001",
-      "title": "Send Digital & Physical Invitations",
-      "description": "Dispatch eco-friendly cards and WhatsApp RSVP links to all 200 guests.",
-      "category": "Invitations",
-      "priority": "HIGH",
-      "status": "READY",
-      "start_date": "2026-12-03",
-      "due_date": "2026-12-23",
-      "estimated_days": 7
-    },
     {
       "id": "tsk-h-1",
       "event_id": "evt-hackathon-002",
@@ -1008,6 +2842,1230 @@
       "due_date": "2026-11-17",
       "estimated_days": 1,
       "id": "tsk-1792851578568-l1087"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792854896143-tr5rx"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792854896154-zgy8a"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792854896203-d1swt"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792854896210-lggid"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792854896216-yv0ty"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792854896221-zm6vj"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792854933854-ie602"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792854933860-4x8r2"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792854933868-689uj"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792854933872-ctnva"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792854933880-txe6r"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792854933884-6k6s6"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792855041207-j10d4"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792855041212-jytxw"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792855041216-osx0j"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792855041222-a1e25"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792855041229-jq100"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792855041238-84qct"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792855291604-4xe5a"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792855291608-55w14"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792855291612-jnwpv"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792855291615-cugkk"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792855291619-shq6y"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792855291623-1uaqi"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792855447155-j82oy"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792855447163-3a9rh"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792855447170-ldsg8"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792855447179-dsf0t"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792855447186-f4v4t"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792855447195-on5vd"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792855482807-g0k68"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792855482814-pr00e"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792855482822-xouio"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792855482828-rghm0"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792855482870-svnaq"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792855482877-l66y3"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792855771366-73b7g"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792855771372-b3u8n"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792855771377-1socm"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792855771382-hks8t"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792855771388-xgx8r"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792855771393-zrdqe"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792855886356-njs0r"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792855886360-nj3wo"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792855886364-4zgrr"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792855886369-vk5z1"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792855886373-oq97i"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792855886377-i7dm1"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792856056756-f4l3q"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792856056763-ngc33"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792856056774-imd95"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792856056785-vvmbg"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792856056796-qd6xu"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792856056807-bkfgt"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792856380454-z44j5"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792856380463-tgjng"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792856380470-mz8vi"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792856380478-9vgr1"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792856380488-kevy6"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792856380500-hrs28"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792856480068-nwh60"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792856480081-oua6c"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792856480100-c8ah8"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792856480114-prnr1"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792856480125-9ul06"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792856480140-fr9pj"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792856575573-fxeoe"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792856575589-4gho5"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792856575603-3ntr6"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792856575618-e35hl"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792856575637-jiqjc"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792856575648-70wp8"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792856701640-7t3zd"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792856701674-z1er3"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792856701691-wsim8"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792856701718-htdbz"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792856701742-196ib"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792856701755-csvu1"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792856844576-1ng5m"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792856844589-y8szb"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792856844601-h3t1u"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792856844620-n8bn4"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792856844637-vvg3u"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792856844651-ro65j"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792856917207-zb9yv"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792856917262-h6j0j"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792856917334-yzr2i"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792856917353-o6329"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792856917371-ztwfn"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792856917396-z1hxj"
+    },
+    {
+      "id": "tsk-w-1",
+      "event_id": "evt-wedding-001",
+      "title": "Confirm Palace Hall Booking Deposit",
+      "description": "Pay remaining 25% booking deposit to secure the 2-day slot.",
+      "category": "Venue",
+      "priority": "CRITICAL",
+      "status": "COMPLETED",
+      "start_date": "2026-10-14",
+      "due_date": "2026-10-22",
+      "estimated_days": 2
+    },
+    {
+      "id": "tsk-w-2",
+      "event_id": "evt-wedding-001",
+      "title": "Finalize Seating Layout with Hall Manager",
+      "description": "Arrange 200 round-table seating with central aisle and elderly ramp access.",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-29",
+      "due_date": "2026-11-13",
+      "estimated_days": 3
+    },
+    {
+      "id": "tsk-w-3",
+      "event_id": "evt-wedding-001",
+      "title": "Catering Menu Tasting Session",
+      "description": "Taste live counter starters and finalize sweets menu with head chef.",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-11-03",
+      "due_date": "2026-11-18",
+      "estimated_days": 1
+    },
+    {
+      "id": "tsk-w-4",
+      "event_id": "evt-wedding-001",
+      "title": "Lock Final Headcount with Caterer",
+      "description": "Confirm exact guest count based on RSVPs for ingredient ordering.",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2027-01-22",
+      "due_date": "2027-02-06",
+      "estimated_days": 2
+    },
+    {
+      "id": "tsk-w-5",
+      "event_id": "evt-wedding-001",
+      "title": "Approve Mandap Floral Concept",
+      "description": "Review 3D floral sketches and select marigold/rose combination.",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "IN_PROGRESS",
+      "start_date": "2026-11-08",
+      "due_date": "2026-11-28",
+      "estimated_days": 5
+    },
+    {
+      "id": "tsk-w-6",
+      "event_id": "evt-wedding-001",
+      "title": "Send Digital & Physical Invitations",
+      "description": "Dispatch eco-friendly cards and WhatsApp RSVP links to all 200 guests.",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-12-03",
+      "due_date": "2026-12-23",
+      "estimated_days": 7
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "title": "Finalize Hall Seating Layout & Elder Access Ramp",
+      "description": "Generated by AI Planning Engine. Category: Venue",
+      "category": "Venue",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-09-18",
+      "due_date": "2026-09-21",
+      "estimated_days": 3,
+      "id": "tsk-1792856945642-s9xaz"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "title": "Host Tasting Session with Head Caterer",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-05",
+      "due_date": "2026-10-06",
+      "estimated_days": 1,
+      "id": "tsk-1792856945664-c028p"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "title": "Dispatch Digital & Eco-Friendly Wedding Invites",
+      "description": "Generated by AI Planning Engine. Category: Invitations",
+      "category": "Invitations",
+      "priority": "HIGH",
+      "status": "READY",
+      "start_date": "2026-10-04",
+      "due_date": "2026-10-11",
+      "estimated_days": 7,
+      "id": "tsk-1792856945680-ywvfo"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "title": "Review Mandap 3D Stage Sketches & Floral Themes",
+      "description": "Generated by AI Planning Engine. Category: Decoration",
+      "category": "Decoration",
+      "priority": "MEDIUM",
+      "status": "READY",
+      "start_date": "2026-10-17",
+      "due_date": "2026-10-21",
+      "estimated_days": 4,
+      "id": "tsk-1792856945698-82smz"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "title": "Lock Final Headcount with Kitchen Manager",
+      "description": "Generated by AI Planning Engine. Category: Catering",
+      "category": "Catering",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-11",
+      "due_date": "2026-11-13",
+      "estimated_days": 2,
+      "id": "tsk-1792856945718-9rff6"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "title": "Rehearse Event-Day Minute-by-Minute Run Sheet",
+      "description": "Generated by AI Planning Engine. Category: Coordination",
+      "category": "Coordination",
+      "priority": "CRITICAL",
+      "status": "BLOCKED",
+      "start_date": "2026-11-16",
+      "due_date": "2026-11-17",
+      "estimated_days": 1,
+      "id": "tsk-1792856945735-g82ko"
     }
   ],
   "dependencies": [
@@ -1070,9 +4128,393 @@
       "id": "dep-1792851578573-h0p1a",
       "task_id": "tsk-1792851578568-l1087",
       "prerequisite_task_id": "tsk-1792851578562-8mzg5"
+    },
+    {
+      "id": "dep-1792854896228-ry6qj",
+      "task_id": "tsk-1792854896216-yv0ty",
+      "prerequisite_task_id": "tsk-1792854896154-zgy8a"
+    },
+    {
+      "id": "dep-1792854896237-jisgf",
+      "task_id": "tsk-1792854896216-yv0ty",
+      "prerequisite_task_id": "tsk-1792854896203-d1swt"
+    },
+    {
+      "id": "dep-1792854896243-x9edl",
+      "task_id": "tsk-1792854896221-zm6vj",
+      "prerequisite_task_id": "tsk-1792854896143-tr5rx"
+    },
+    {
+      "id": "dep-1792854933888-j854m",
+      "task_id": "tsk-1792854933880-txe6r",
+      "prerequisite_task_id": "tsk-1792854933860-4x8r2"
+    },
+    {
+      "id": "dep-1792854933895-f8ade",
+      "task_id": "tsk-1792854933880-txe6r",
+      "prerequisite_task_id": "tsk-1792854933868-689uj"
+    },
+    {
+      "id": "dep-1792854933902-9f89e",
+      "task_id": "tsk-1792854933884-6k6s6",
+      "prerequisite_task_id": "tsk-1792854933854-ie602"
+    },
+    {
+      "id": "dep-1792855041242-sltz8",
+      "task_id": "tsk-1792855041229-jq100",
+      "prerequisite_task_id": "tsk-1792855041212-jytxw"
+    },
+    {
+      "id": "dep-1792855041247-d956e",
+      "task_id": "tsk-1792855041229-jq100",
+      "prerequisite_task_id": "tsk-1792855041216-osx0j"
+    },
+    {
+      "id": "dep-1792855041256-lrz4k",
+      "task_id": "tsk-1792855041238-84qct",
+      "prerequisite_task_id": "tsk-1792855041207-j10d4"
+    },
+    {
+      "id": "dep-1792855291670-1wdvi",
+      "task_id": "tsk-1792855291619-shq6y",
+      "prerequisite_task_id": "tsk-1792855291608-55w14"
+    },
+    {
+      "id": "dep-1792855291710-2nckz",
+      "task_id": "tsk-1792855291619-shq6y",
+      "prerequisite_task_id": "tsk-1792855291612-jnwpv"
+    },
+    {
+      "id": "dep-1792855291714-2rzck",
+      "task_id": "tsk-1792855291623-1uaqi",
+      "prerequisite_task_id": "tsk-1792855291604-4xe5a"
+    },
+    {
+      "id": "dep-1792855447199-2zhuh",
+      "task_id": "tsk-1792855447186-f4v4t",
+      "prerequisite_task_id": "tsk-1792855447163-3a9rh"
+    },
+    {
+      "id": "dep-1792855447204-o4eos",
+      "task_id": "tsk-1792855447186-f4v4t",
+      "prerequisite_task_id": "tsk-1792855447170-ldsg8"
+    },
+    {
+      "id": "dep-1792855447210-uskvp",
+      "task_id": "tsk-1792855447195-on5vd",
+      "prerequisite_task_id": "tsk-1792855447155-j82oy"
+    },
+    {
+      "id": "dep-1792855482884-eq8xi",
+      "task_id": "tsk-1792855482870-svnaq",
+      "prerequisite_task_id": "tsk-1792855482814-pr00e"
+    },
+    {
+      "id": "dep-1792855482891-0o56h",
+      "task_id": "tsk-1792855482870-svnaq",
+      "prerequisite_task_id": "tsk-1792855482822-xouio"
+    },
+    {
+      "id": "dep-1792855482896-sk6g8",
+      "task_id": "tsk-1792855482877-l66y3",
+      "prerequisite_task_id": "tsk-1792855482807-g0k68"
+    },
+    {
+      "id": "dep-1792855771399-jpn30",
+      "task_id": "tsk-1792855771388-xgx8r",
+      "prerequisite_task_id": "tsk-1792855771372-b3u8n"
+    },
+    {
+      "id": "dep-1792855771404-j91l8",
+      "task_id": "tsk-1792855771388-xgx8r",
+      "prerequisite_task_id": "tsk-1792855771377-1socm"
+    },
+    {
+      "id": "dep-1792855771412-offx1",
+      "task_id": "tsk-1792855771393-zrdqe",
+      "prerequisite_task_id": "tsk-1792855771366-73b7g"
+    },
+    {
+      "id": "dep-1792855886381-fefmv",
+      "task_id": "tsk-1792855886373-oq97i",
+      "prerequisite_task_id": "tsk-1792855886360-nj3wo"
+    },
+    {
+      "id": "dep-1792855886385-yfged",
+      "task_id": "tsk-1792855886373-oq97i",
+      "prerequisite_task_id": "tsk-1792855886364-4zgrr"
+    },
+    {
+      "id": "dep-1792855886392-uw7t7",
+      "task_id": "tsk-1792855886377-i7dm1",
+      "prerequisite_task_id": "tsk-1792855886356-njs0r"
+    },
+    {
+      "id": "dep-1792856056818-0q4gd",
+      "task_id": "tsk-1792856056796-qd6xu",
+      "prerequisite_task_id": "tsk-1792856056763-ngc33"
+    },
+    {
+      "id": "dep-1792856056836-x9g0a",
+      "task_id": "tsk-1792856056796-qd6xu",
+      "prerequisite_task_id": "tsk-1792856056774-imd95"
+    },
+    {
+      "id": "dep-1792856056846-k01qz",
+      "task_id": "tsk-1792856056807-bkfgt",
+      "prerequisite_task_id": "tsk-1792856056756-f4l3q"
+    },
+    {
+      "id": "dep-1792856380514-xublh",
+      "task_id": "tsk-1792856380488-kevy6",
+      "prerequisite_task_id": "tsk-1792856380463-tgjng"
+    },
+    {
+      "id": "dep-1792856380523-c58ah",
+      "task_id": "tsk-1792856380488-kevy6",
+      "prerequisite_task_id": "tsk-1792856380470-mz8vi"
+    },
+    {
+      "id": "dep-1792856380532-ajh19",
+      "task_id": "tsk-1792856380500-hrs28",
+      "prerequisite_task_id": "tsk-1792856380454-z44j5"
+    },
+    {
+      "id": "dep-1792856480151-ukp33",
+      "task_id": "tsk-1792856480125-9ul06",
+      "prerequisite_task_id": "tsk-1792856480081-oua6c"
+    },
+    {
+      "id": "dep-1792856480161-t1pu1",
+      "task_id": "tsk-1792856480125-9ul06",
+      "prerequisite_task_id": "tsk-1792856480100-c8ah8"
+    },
+    {
+      "id": "dep-1792856480187-cwwat",
+      "task_id": "tsk-1792856480140-fr9pj",
+      "prerequisite_task_id": "tsk-1792856480068-nwh60"
+    },
+    {
+      "id": "dep-1792856575660-9uofu",
+      "task_id": "tsk-1792856575637-jiqjc",
+      "prerequisite_task_id": "tsk-1792856575589-4gho5"
+    },
+    {
+      "id": "dep-1792856575675-z8ve9",
+      "task_id": "tsk-1792856575637-jiqjc",
+      "prerequisite_task_id": "tsk-1792856575603-3ntr6"
+    },
+    {
+      "id": "dep-1792856575688-ljrt7",
+      "task_id": "tsk-1792856575648-70wp8",
+      "prerequisite_task_id": "tsk-1792856575573-fxeoe"
+    },
+    {
+      "id": "dep-1792856701772-kaliv",
+      "task_id": "tsk-1792856701742-196ib",
+      "prerequisite_task_id": "tsk-1792856701674-z1er3"
+    },
+    {
+      "id": "dep-1792856701787-o4ue3",
+      "task_id": "tsk-1792856701742-196ib",
+      "prerequisite_task_id": "tsk-1792856701691-wsim8"
+    },
+    {
+      "id": "dep-1792856701801-8i17c",
+      "task_id": "tsk-1792856701755-csvu1",
+      "prerequisite_task_id": "tsk-1792856701640-7t3zd"
+    },
+    {
+      "id": "dep-1792856844666-fs7ru",
+      "task_id": "tsk-1792856844637-vvg3u",
+      "prerequisite_task_id": "tsk-1792856844589-y8szb"
+    },
+    {
+      "id": "dep-1792856844678-owvie",
+      "task_id": "tsk-1792856844637-vvg3u",
+      "prerequisite_task_id": "tsk-1792856844601-h3t1u"
+    },
+    {
+      "id": "dep-1792856844692-47e19",
+      "task_id": "tsk-1792856844651-ro65j",
+      "prerequisite_task_id": "tsk-1792856844576-1ng5m"
+    },
+    {
+      "id": "dep-1792856917414-ox371",
+      "task_id": "tsk-1792856917371-ztwfn",
+      "prerequisite_task_id": "tsk-1792856917262-h6j0j"
+    },
+    {
+      "id": "dep-1792856917456-8f7ub",
+      "task_id": "tsk-1792856917371-ztwfn",
+      "prerequisite_task_id": "tsk-1792856917334-yzr2i"
+    },
+    {
+      "id": "dep-1792856917470-58y6x",
+      "task_id": "tsk-1792856917396-z1hxj",
+      "prerequisite_task_id": "tsk-1792856917207-zb9yv"
+    },
+    {
+      "id": "dep-1792856945753-pxkrj",
+      "task_id": "tsk-1792856945718-9rff6",
+      "prerequisite_task_id": "tsk-1792856945664-c028p"
+    },
+    {
+      "id": "dep-1792856945769-0b49t",
+      "task_id": "tsk-1792856945718-9rff6",
+      "prerequisite_task_id": "tsk-1792856945680-ywvfo"
+    },
+    {
+      "id": "dep-1792856945787-260nk",
+      "task_id": "tsk-1792856945735-g82ko",
+      "prerequisite_task_id": "tsk-1792856945642-s9xaz"
     }
   ],
   "scenarios": [
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792856945949-dvbof",
+      "created_at": "2026-10-24T15:49:05.949Z"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792856917684-cm7dv",
+      "created_at": "2026-10-24T15:48:37.684Z"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792856844830-39uv2",
+      "created_at": "2026-10-24T15:47:24.830Z"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792856702066-928z1",
+      "created_at": "2026-10-24T15:45:02.066Z"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792856575833-tgwi8",
+      "created_at": "2026-10-24T15:42:55.833Z"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792856480368-pg9eo",
+      "created_at": "2026-10-24T15:41:20.368Z"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792856380629-ps4k4",
+      "created_at": "2026-10-24T15:39:40.629Z"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792856056979-noa30",
+      "created_at": "2026-10-24T15:34:16.979Z"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792855886447-ej5lk",
+      "created_at": "2026-10-24T15:31:26.447Z"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792855771484-tma1h",
+      "created_at": "2026-10-24T15:29:31.484Z"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792855482974-ctxgo",
+      "created_at": "2026-10-24T15:24:42.974Z"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792855447298-b3whx",
+      "created_at": "2026-10-24T15:24:07.298Z"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792855291772-ftb3d",
+      "created_at": "2026-10-24T15:21:31.772Z"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792855041360-3fp7j",
+      "created_at": "2026-10-24T15:17:21.360Z"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792854933974-2dj2b",
+      "created_at": "2026-10-24T15:15:33.974Z"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "proposed_budget": 65000000,
+      "proposed_guest_count": 200,
+      "summary": "Simulated budget requires ₹1,00,000 in adjustments. 2 explainable trade-offs proposed while protecting MUST_HAVE priorities.",
+      "status": "APPLIED",
+      "id": "scen-1792854896330-05hv4",
+      "created_at": "2026-10-24T15:14:56.330Z"
+    },
     {
       "event_id": "evt-1792851578547-r5863",
       "proposed_budget": 65000000,
@@ -1145,6 +4587,1601 @@
       "status": "REJECTED",
       "id": "rec-1792851578597-1",
       "scenario_id": "scen-1792851578597-1vlto"
+    },
+    {
+      "category_id": "cat-1792854896085-8c7aw",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792854896330-0",
+      "scenario_id": "scen-1792854896330-05hv4"
+    },
+    {
+      "category_id": "cat-1792854896074-wk6xe",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792854896330-1",
+      "scenario_id": "scen-1792854896330-05hv4"
+    },
+    {
+      "category_id": "cat-1792854933813-uvg84",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792854933974-0",
+      "scenario_id": "scen-1792854933974-2dj2b"
+    },
+    {
+      "category_id": "cat-1792854933804-l7uef",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792854933974-1",
+      "scenario_id": "scen-1792854933974-2dj2b"
+    },
+    {
+      "category_id": "cat-1792855041180-cwnsq",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792855041360-0",
+      "scenario_id": "scen-1792855041360-3fp7j"
+    },
+    {
+      "category_id": "cat-1792855041175-5knrp",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792855041360-1",
+      "scenario_id": "scen-1792855041360-3fp7j"
+    },
+    {
+      "category_id": "cat-1792855291578-77ii6",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792855291772-0",
+      "scenario_id": "scen-1792855291772-ftb3d"
+    },
+    {
+      "category_id": "cat-1792855291574-g0gd7",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792855291772-1",
+      "scenario_id": "scen-1792855291772-ftb3d"
+    },
+    {
+      "category_id": "cat-1792855447124-0qzj6",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792855447298-0",
+      "scenario_id": "scen-1792855447298-b3whx"
+    },
+    {
+      "category_id": "cat-1792855447117-bokvk",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792855447298-1",
+      "scenario_id": "scen-1792855447298-b3whx"
+    },
+    {
+      "category_id": "cat-1792855482780-4c6qv",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792855482974-0",
+      "scenario_id": "scen-1792855482974-ctxgo"
+    },
+    {
+      "category_id": "cat-1792855482774-fopfj",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792855482974-1",
+      "scenario_id": "scen-1792855482974-ctxgo"
+    },
+    {
+      "category_id": "cat-1792855771334-7beeb",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792855771484-0",
+      "scenario_id": "scen-1792855771484-tma1h"
+    },
+    {
+      "category_id": "cat-1792855771328-080mp",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792855771484-1",
+      "scenario_id": "scen-1792855771484-tma1h"
+    },
+    {
+      "category_id": "cat-1792855886310-a58op",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792855886447-0",
+      "scenario_id": "scen-1792855886447-ej5lk"
+    },
+    {
+      "category_id": "cat-1792855886305-xvwt2",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792855886447-1",
+      "scenario_id": "scen-1792855886447-ej5lk"
+    },
+    {
+      "category_id": "cat-1792856056718-i4ktx",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792856056979-0",
+      "scenario_id": "scen-1792856056979-noa30"
+    },
+    {
+      "category_id": "cat-1792856056711-zaj4u",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792856056979-1",
+      "scenario_id": "scen-1792856056979-noa30"
+    },
+    {
+      "category_id": "cat-1792856380406-rxo2p",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792856380629-0",
+      "scenario_id": "scen-1792856380629-ps4k4"
+    },
+    {
+      "category_id": "cat-1792856380395-tbs51",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792856380629-1",
+      "scenario_id": "scen-1792856380629-ps4k4"
+    },
+    {
+      "category_id": "cat-1792856480016-rrugl",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792856480368-0",
+      "scenario_id": "scen-1792856480368-pg9eo"
+    },
+    {
+      "category_id": "cat-1792856480003-b22a6",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792856480368-1",
+      "scenario_id": "scen-1792856480368-pg9eo"
+    },
+    {
+      "category_id": "cat-1792856575501-nde97",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792856575833-0",
+      "scenario_id": "scen-1792856575833-tgwi8"
+    },
+    {
+      "category_id": "cat-1792856575487-e7p1m",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792856575833-1",
+      "scenario_id": "scen-1792856575833-tgwi8"
+    },
+    {
+      "category_id": "cat-1792856701555-oxhfs",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792856702066-0",
+      "scenario_id": "scen-1792856702066-928z1"
+    },
+    {
+      "category_id": "cat-1792856701541-rcxr8",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792856702066-1",
+      "scenario_id": "scen-1792856702066-928z1"
+    },
+    {
+      "category_id": "cat-1792856844507-zhaeu",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792856844830-0",
+      "scenario_id": "scen-1792856844830-39uv2"
+    },
+    {
+      "category_id": "cat-1792856844488-yelws",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792856844830-1",
+      "scenario_id": "scen-1792856844830-39uv2"
+    },
+    {
+      "category_id": "cat-1792856917082-lk3i2",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792856917684-0",
+      "scenario_id": "scen-1792856917684-cm7dv"
+    },
+    {
+      "category_id": "cat-1792856917068-i0v1e",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792856917684-1",
+      "scenario_id": "scen-1792856917684-cm7dv"
+    },
+    {
+      "category_id": "cat-1792856945472-pbaj9",
+      "action": "Optimize Sound, DJ & Music allocation from ₹40,000 to ₹26,000",
+      "current_amount": 4000000,
+      "proposed_amount": 2600000,
+      "diff_amount": -1400000,
+      "trade_off_explanation": "Reduce expenditure in Sound, DJ & Music (LOW tier) to save ₹14,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "ACCEPTED",
+      "id": "rec-1792856945949-0",
+      "scenario_id": "scen-1792856945949-dvbof"
+    },
+    {
+      "category_id": "cat-1792856945408-ixmau",
+      "action": "Optimize Floral & Decor allocation from ₹80,000 to ₹64,000",
+      "current_amount": 8000000,
+      "proposed_amount": 6400000,
+      "diff_amount": -1600000,
+      "trade_off_explanation": "Reduce expenditure in Floral & Decor (FLEXIBLE tier) to save ₹16,000. Suggests simplifying decor packages or non-essential vendor rentals. Confirm feasibility with supplier before booking.",
+      "status": "REJECTED",
+      "id": "rec-1792856945949-1",
+      "scenario_id": "scen-1792856945949-dvbof"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "ven-h-1",
+      "event_id": "evt-hackathon-002",
+      "name": "T-Hub Facility & Infrastructure Services",
+      "category": "VENUE",
+      "contact_person": "Kavita Rao",
+      "email": "kavita@t-hub.co",
+      "phone": "+91 99880 77665",
+      "address": "Knowledge City, Raidurg, Hyderabad",
+      "status": "BOOKED",
+      "notes": "Auditorium + 3 breakout labs + 1Gbps fiber.",
+      "created_at": "2026-10-18T15:14:55.889Z",
+      "updated_at": "2026-10-23T15:14:55.889Z"
+    },
+    {
+      "id": "ven-h-2",
+      "event_id": "evt-hackathon-002",
+      "name": "ByteBites Cloud Kitchens",
+      "category": "CATERING",
+      "contact_person": "Imran Khan",
+      "email": "orders@bytebites.in",
+      "phone": "+91 91234 56789",
+      "status": "QUOTED",
+      "notes": "Catering quote for 150 hackers including midnight pizza.",
+      "created_at": "2026-10-20T15:14:55.889Z",
+      "updated_at": "2026-10-23T15:14:55.889Z"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "name": "Heritage Royal Caterers",
+      "category": "CATERING",
+      "contact_name": "Vikram Mehta",
+      "contact_email": "vikram@heritageroyal.com",
+      "status": "BOOKED",
+      "id": "ven-1792856844926-9s7pc",
+      "created_at": "2026-10-24T15:47:24.926Z",
+      "updated_at": "2026-10-24T15:47:24.944Z"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "name": "Heritage Royal Caterers",
+      "category": "CATERING",
+      "contact_name": "Vikram Mehta",
+      "contact_email": "vikram@heritageroyal.com",
+      "status": "BOOKED",
+      "id": "ven-1792856917857-cj19m",
+      "created_at": "2026-10-24T15:48:37.857Z",
+      "updated_at": "2026-10-24T15:48:37.878Z"
+    },
+    {
+      "id": "ven-w-1",
+      "event_id": "evt-wedding-001",
+      "name": "The Grand Palace Hall & Banquets",
+      "category": "VENUE",
+      "contact_person": "Mr. Suresh Kulkarni",
+      "email": "events@grandpalace.com",
+      "phone": "+91 98450 11223",
+      "website": "https://grandpalacebangalore.com",
+      "address": "Palace Cross Road, Vasanth Nagar, Bangalore",
+      "status": "BOOKED",
+      "notes": "Main hall booked for 2 days. 25% deposit paid.",
+      "created_at": "2026-10-14T15:49:04.121Z",
+      "updated_at": "2026-10-22T15:49:04.121Z"
+    },
+    {
+      "id": "ven-w-2",
+      "event_id": "evt-wedding-001",
+      "name": "Gourmet Feast Caterers & Banquets",
+      "category": "CATERING",
+      "contact_person": "Chef Anand Subramaniam",
+      "email": "anand@gourmetfeast.in",
+      "phone": "+91 98451 44556",
+      "website": "https://gourmetfeast.in",
+      "address": "Indiranagar, Bangalore",
+      "status": "BOOKED",
+      "notes": "Full South & North Indian live counters with strict Jain counter.",
+      "created_at": "2026-10-15T15:49:04.121Z",
+      "updated_at": "2026-10-23T15:49:04.121Z"
+    },
+    {
+      "id": "ven-w-3",
+      "event_id": "evt-wedding-001",
+      "name": "LensCraft Cinematic Studios",
+      "category": "PHOTOGRAPHY",
+      "contact_person": "Pooja Reddy",
+      "email": "contact@lenscraft.photos",
+      "phone": "+91 97312 88990",
+      "website": "https://lenscraft.photos",
+      "status": "BOOKED",
+      "notes": "2 Candid photographers + 1 drone operator + teaser film.",
+      "created_at": "2026-10-16T15:49:04.122Z",
+      "updated_at": "2026-10-23T15:49:04.122Z"
+    },
+    {
+      "id": "ven-w-4",
+      "event_id": "evt-wedding-001",
+      "name": "Floral Symphony Decorators",
+      "category": "DECOR",
+      "contact_person": "Ravi Kumar",
+      "email": "ravi@floralsymphony.in",
+      "phone": "+91 98455 33221",
+      "status": "QUOTED",
+      "notes": "Submitted ₹80,000 quote for Jasmine/Marigold traditional stage.",
+      "created_at": "2026-10-19T15:49:04.122Z",
+      "updated_at": "2026-10-19T15:49:04.122Z"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "name": "Heritage Royal Caterers",
+      "category": "CATERING",
+      "contact_name": "Vikram Mehta",
+      "contact_email": "vikram@heritageroyal.com",
+      "status": "BOOKED",
+      "id": "ven-1792856946117-jfjfj",
+      "created_at": "2026-10-24T15:49:06.117Z",
+      "updated_at": "2026-10-24T15:49:06.133Z"
+    }
+  ],
+  "quotations": [
+    {
+      "id": "qt-h-catering-1",
+      "vendor_id": "ven-h-2",
+      "event_id": "evt-hackathon-002",
+      "quote_reference": "BB-HACK-104",
+      "amount_minor": 10500000,
+      "currency": "INR",
+      "status": "RECEIVED",
+      "valid_until": "2026-11-13",
+      "line_items": [
+        {
+          "description": "Day 1 Lunch & Dinner Boxed Meals (150 pax)",
+          "amount_minor": 6000000,
+          "is_mandatory": true
+        },
+        {
+          "description": "Midnight 2AM Fresh Pizza & Energy Drinks",
+          "amount_minor": 3000000,
+          "is_mandatory": true
+        },
+        {
+          "description": "Day 2 Healthy Breakfast Bowls & Unlimited Coffee",
+          "amount_minor": 1500000,
+          "is_mandatory": true
+        }
+      ],
+      "inclusions": [
+        "All meals individually packed with dietary labels",
+        "Hot coffee dispenser setup throughout night"
+      ],
+      "exclusions": [
+        "Trash disposal bins (venue provided)"
+      ],
+      "deposit_required_minor": 3000000,
+      "created_at": "2026-10-21T15:14:55.889Z"
+    },
+    {
+      "vendor_id": "ven-1792856844926-9s7pc",
+      "event_id": "evt-1792856844434-qimle",
+      "title": "Royal Silver Buffet Menu",
+      "total_amount": 22000000,
+      "deposit_amount": 4400000,
+      "inclusions": [
+        "3 Course Buffet",
+        "Welcome Drinks",
+        "Live Chaat Station"
+      ],
+      "exclusions": [
+        "Imported Wine"
+      ],
+      "status": "ACCEPTED",
+      "line_items": [
+        {
+          "description": "Dinner Buffet (200 guests)",
+          "amount": 18000000
+        },
+        {
+          "description": "Live Counter Staffing",
+          "amount": 4000000
+        }
+      ],
+      "id": "qt-1792856844934-gukso",
+      "created_at": "2026-10-24T15:47:24.934Z",
+      "linked_budget_line_item_id": "li-1792856844722-6juo5"
+    },
+    {
+      "vendor_id": "ven-1792856917857-cj19m",
+      "event_id": "evt-1792856917007-lkeji",
+      "quote_reference": "Q-HR-2026",
+      "amount_minor": 22000000,
+      "currency": "INR",
+      "valid_until": "2026-11-01",
+      "deposit_required_minor": 4400000,
+      "inclusions": [
+        "3 Course Buffet",
+        "Welcome Drinks",
+        "Live Chaat Station"
+      ],
+      "exclusions": [
+        "Imported Wine"
+      ],
+      "status": "ACCEPTED",
+      "line_items": [
+        {
+          "description": "Dinner Buffet (200 guests)",
+          "amount_minor": 18000000,
+          "is_mandatory": true
+        },
+        {
+          "description": "Live Counter Staffing",
+          "amount_minor": 4000000,
+          "is_mandatory": true
+        }
+      ],
+      "id": "qt-1792856917868-uvj4q",
+      "created_at": "2026-10-24T15:48:37.868Z",
+      "linked_budget_line_item_id": "li-1792856917543-4m1tz"
+    },
+    {
+      "id": "qt-w-catering-1",
+      "vendor_id": "ven-w-2",
+      "event_id": "evt-wedding-001",
+      "quote_reference": "GF-2026-089",
+      "amount_minor": 28000000,
+      "currency": "INR",
+      "status": "ACCEPTED",
+      "valid_until": "2026-11-23",
+      "line_items": [
+        {
+          "description": "South Indian Traditional Plantain Leaf Feast (200 pax)",
+          "amount_minor": 16000000,
+          "is_mandatory": true
+        },
+        {
+          "description": "North Indian Evening Buffet & Live Chaat Counter",
+          "amount_minor": 9000000,
+          "is_mandatory": true
+        },
+        {
+          "description": "Dedicated Jain Prep Counter & Service Staff",
+          "amount_minor": 3000000,
+          "is_mandatory": true
+        }
+      ],
+      "inclusions": [
+        "Uniformed Service Staff (25 servers)",
+        "Cutlery & Chafing Dishes",
+        "Complimentary Welcome Drinks"
+      ],
+      "exclusions": [
+        "Table linen and seating",
+        "Alcoholic beverages"
+      ],
+      "payment_terms": "30% Advance on signing, 50% on event morning, 20% on wrap-up",
+      "deposit_required_minor": 8400000,
+      "linked_budget_line_item_id": "li-w-2",
+      "notes": "Accepted and linked directly to Catering line item.",
+      "created_at": "2026-10-17T15:49:04.122Z"
+    },
+    {
+      "id": "qt-w-photo-1",
+      "vendor_id": "ven-w-3",
+      "event_id": "evt-wedding-001",
+      "quote_reference": "LC-WED-412",
+      "amount_minor": 11000000,
+      "currency": "INR",
+      "status": "ACCEPTED",
+      "valid_until": "2026-12-08",
+      "line_items": [
+        {
+          "description": "2 Candid Photographers (Full Day)",
+          "amount_minor": 6000000,
+          "is_mandatory": true
+        },
+        {
+          "description": "Cinematic 4K Highlights Film (5-7 mins)",
+          "amount_minor": 3500000,
+          "is_mandatory": true
+        },
+        {
+          "description": "Aerial Drone Coverage for Mandap Ceremony",
+          "amount_minor": 1500000,
+          "is_mandatory": false
+        }
+      ],
+      "inclusions": [
+        "Raw footage drive provided within 48h",
+        "Edited teaser in 7 days",
+        "1 Printed Premium Album (40 pages)"
+      ],
+      "exclusions": [
+        "Travel costs outside Bangalore limits"
+      ],
+      "deposit_required_minor": 3000000,
+      "linked_budget_line_item_id": "li-w-3",
+      "created_at": "2026-10-18T15:49:04.122Z"
+    },
+    {
+      "vendor_id": "ven-1792856946117-jfjfj",
+      "event_id": "evt-1792856945141-37nhs",
+      "quote_reference": "Q-HR-2026",
+      "amount_minor": 22000000,
+      "currency": "INR",
+      "valid_until": "2026-11-01",
+      "deposit_required_minor": 4400000,
+      "inclusions": [
+        "3 Course Buffet",
+        "Welcome Drinks",
+        "Live Chaat Station"
+      ],
+      "exclusions": [
+        "Imported Wine"
+      ],
+      "status": "ACCEPTED",
+      "line_items": [
+        {
+          "description": "Dinner Buffet (200 guests)",
+          "amount_minor": 18000000,
+          "is_mandatory": true
+        },
+        {
+          "description": "Live Counter Staffing",
+          "amount_minor": 4000000,
+          "is_mandatory": true
+        }
+      ],
+      "id": "qt-1792856946125-vs8ey",
+      "created_at": "2026-10-24T15:49:06.125Z",
+      "linked_budget_line_item_id": "li-1792856945827-6czjh"
+    }
+  ],
+  "runSheetItems": [
+    {
+      "id": "rs-h-1",
+      "event_id": "evt-hackathon-002",
+      "title": "Participant Check-In & Swag Bag Distribution",
+      "scheduled_start_time": "08:00",
+      "scheduled_end_time": "09:30",
+      "category": "LOGISTICS",
+      "location": "T-Hub Ground Floor Atrium",
+      "responsible_person": "Student Volunteer Lead",
+      "status": "SCHEDULED",
+      "sequence_order": 1,
+      "created_at": "2026-10-21T15:14:55.890Z"
+    },
+    {
+      "id": "rs-h-2",
+      "event_id": "evt-hackathon-002",
+      "title": "Opening Keynote & AI Track Announcement",
+      "scheduled_start_time": "09:30",
+      "scheduled_end_time": "10:15",
+      "category": "SPEECH",
+      "location": "Main Auditorium",
+      "responsible_person": "Organizing Committee",
+      "status": "SCHEDULED",
+      "sequence_order": 2,
+      "created_at": "2026-10-21T15:14:55.890Z"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "title": "Groom Baraat Arrival",
+      "start_time": "17:00",
+      "end_time": "18:00",
+      "duration_minutes": 60,
+      "category": "CEREMONY",
+      "lead_person": "Lead Coordinator",
+      "location": "Main Entrance",
+      "status": "COMPLETED",
+      "id": "rs-1792856917897-7wkqx",
+      "created_at": "2026-10-24T15:48:37.897Z"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "title": "Varmala Stage Ceremony",
+      "start_time": "18:00",
+      "end_time": "18:45",
+      "duration_minutes": 45,
+      "category": "CEREMONY",
+      "lead_person": "Stage Manager",
+      "location": "Grand Mandap",
+      "status": "IN_PROGRESS",
+      "id": "rs-1792856917905-eq2c4",
+      "created_at": "2026-10-24T15:48:37.905Z"
+    },
+    {
+      "id": "rs-w-1",
+      "event_id": "evt-wedding-001",
+      "title": "Mandap Stage Floral Setup & Acoustic Check",
+      "scheduled_start_time": "07:00",
+      "scheduled_end_time": "08:30",
+      "category": "LOGISTICS",
+      "location": "Main Hall Mandap Stage",
+      "responsible_person": "Ravi Kumar (Floral Symphony)",
+      "vendor_id": "ven-w-4",
+      "status": "SCHEDULED",
+      "notes": "Mandap setup must be finalized before groom family arrival.",
+      "sequence_order": 1,
+      "created_at": "2026-10-19T15:49:04.122Z"
+    },
+    {
+      "id": "rs-w-2",
+      "event_id": "evt-wedding-001",
+      "title": "Baraat Procession & Milni Welcome",
+      "scheduled_start_time": "09:00",
+      "scheduled_end_time": "10:00",
+      "category": "CEREMONY",
+      "location": "Grand Palace Main Entrance Gate",
+      "responsible_person": "Aarav's Uncle & Coordinator",
+      "status": "SCHEDULED",
+      "notes": "Rose petal shower and traditional dhol welcome at the grand arch.",
+      "sequence_order": 2,
+      "created_at": "2026-10-19T15:49:04.122Z"
+    },
+    {
+      "id": "rs-w-3",
+      "event_id": "evt-wedding-001",
+      "title": "Traditional Varmala & Sacred Pheras",
+      "scheduled_start_time": "10:15",
+      "scheduled_end_time": "11:45",
+      "category": "CEREMONY",
+      "location": "Center Mandap Stage",
+      "responsible_person": "Chief Priest Pandit Joshi",
+      "status": "SCHEDULED",
+      "notes": "Auspicious muhurtham timing is 10:48 AM.",
+      "sequence_order": 3,
+      "created_at": "2026-10-19T15:49:04.122Z"
+    },
+    {
+      "id": "rs-w-4",
+      "event_id": "evt-wedding-001",
+      "title": "Traditional Wedding Feast (South & North Indian)",
+      "scheduled_start_time": "12:00",
+      "scheduled_end_time": "14:30",
+      "category": "CATERING",
+      "location": "Dining Hall & Live Food Court",
+      "responsible_person": "Chef Anand (Gourmet Feast)",
+      "vendor_id": "ven-w-2",
+      "status": "SCHEDULED",
+      "notes": "Ensure dedicated Jain counter and elderly seated service.",
+      "sequence_order": 4,
+      "created_at": "2026-10-19T15:49:04.122Z"
+    },
+    {
+      "id": "rs-w-5",
+      "event_id": "evt-wedding-001",
+      "title": "Couple Portraiture & Family Ashirwad",
+      "scheduled_start_time": "14:45",
+      "scheduled_end_time": "16:00",
+      "category": "PHOTO",
+      "location": "Royal Garden Gazebo",
+      "responsible_person": "Pooja Reddy (LensCraft Studios)",
+      "vendor_id": "ven-w-3",
+      "status": "SCHEDULED",
+      "notes": "Golden hour lighting shots with extended family members.",
+      "sequence_order": 5,
+      "created_at": "2026-10-19T15:49:04.122Z"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "title": "Groom Baraat Arrival",
+      "start_time": "17:00",
+      "end_time": "18:00",
+      "duration_minutes": 60,
+      "category": "CEREMONY",
+      "lead_person": "Lead Coordinator",
+      "location": "Main Entrance",
+      "status": "COMPLETED",
+      "id": "rs-1792856946151-nbdsp",
+      "created_at": "2026-10-24T15:49:06.152Z"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "title": "Varmala Stage Ceremony",
+      "start_time": "18:00",
+      "end_time": "18:45",
+      "duration_minutes": 45,
+      "category": "CEREMONY",
+      "lead_person": "Stage Manager",
+      "location": "Grand Mandap",
+      "status": "IN_PROGRESS",
+      "id": "rs-1792856946160-pnuhs",
+      "created_at": "2026-10-24T15:49:06.160Z"
+    }
+  ],
+  "runSheetIncidents": [
+    {
+      "id": "inc-w-1",
+      "event_id": "evt-wedding-001",
+      "run_sheet_item_id": "rs-w-1",
+      "severity": "LOW",
+      "description": "Floral delivery vehicle arrived 20 minutes behind schedule due to traffic.",
+      "reported_time": "2026-10-23T15:49:04.122Z",
+      "resolved_time": "2026-10-23T17:35:44.122Z",
+      "resolution_notes": "Additional florist assistants deployed to recover buffer time without delaying Baraat.",
+      "reported_by": "Event Coordinator"
+    }
+  ],
+  "householdGroups": [
+    {
+      "id": "hh-hack-team1",
+      "event_id": "evt-hackathon-002",
+      "name": "Team NeuralForge",
+      "max_guests": 4
+    },
+    {
+      "id": "hh-sharma",
+      "event_id": "evt-wedding-001",
+      "name": "Sharma Family (Groom VIP)",
+      "max_guests": 4
+    },
+    {
+      "id": "hh-iyer",
+      "event_id": "evt-wedding-001",
+      "name": "Iyer Family (Bride VIP)",
+      "max_guests": 4
+    },
+    {
+      "id": "hh-friends",
+      "event_id": "evt-wedding-001",
+      "name": "Bangalore Tech Circle Friends",
+      "max_guests": 5
+    }
+  ],
+  "guests": [
+    {
+      "id": "gst-h-1",
+      "event_id": "evt-hackathon-002",
+      "household_group_id": "hh-hack-team1",
+      "first_name": "Arjun",
+      "last_name": "Varma",
+      "email": "arjun@neuralforge.dev",
+      "invitation_status": "DELIVERED",
+      "rsvp_status": "ATTENDING",
+      "plus_one_allowed": false,
+      "dietary_restrictions": [
+        "HALAL"
+      ],
+      "accessibility_needs": [],
+      "created_at": "2026-10-22T15:14:55.890Z"
+    },
+    {
+      "id": "gst-h-2",
+      "event_id": "evt-hackathon-002",
+      "household_group_id": "hh-hack-team1",
+      "first_name": "Sneha",
+      "last_name": "Patil",
+      "email": "sneha@neuralforge.dev",
+      "invitation_status": "DELIVERED",
+      "rsvp_status": "ATTENDING",
+      "plus_one_allowed": false,
+      "dietary_restrictions": [
+        "VEGAN"
+      ],
+      "accessibility_needs": [],
+      "created_at": "2026-10-22T15:14:55.890Z"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "first_name": "Aadhav",
+      "last_name": "Kumar",
+      "email": "aadhav@example.com",
+      "rsvp_status": "ATTENDING",
+      "plus_ones_count": 1,
+      "dietary_restrictions": [
+        "VEGETARIAN",
+        "JAIN"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR"
+      ],
+      "id": "gst-1792856917914-h65ll",
+      "created_at": "2026-10-24T15:48:37.914Z"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "first_name": "Simran",
+      "last_name": "Kaur",
+      "email": "simran@example.com",
+      "rsvp_status": "ATTENDING",
+      "plus_ones_count": 0,
+      "dietary_restrictions": [
+        "GLUTEN_FREE"
+      ],
+      "id": "gst-1792856917922-8exzu",
+      "created_at": "2026-10-24T15:48:37.922Z"
+    },
+    {
+      "id": "gst-w-1",
+      "event_id": "evt-wedding-001",
+      "household_group_id": "hh-sharma",
+      "first_name": "Rajesh",
+      "last_name": "Sharma",
+      "email": "rajesh.sharma@example.com",
+      "phone": "+91 98200 12345",
+      "invitation_status": "DELIVERED",
+      "rsvp_status": "ATTENDING",
+      "plus_one_allowed": true,
+      "plus_one_name": "Sunita Sharma",
+      "dietary_restrictions": [
+        "VEG",
+        "JAIN"
+      ],
+      "accessibility_needs": [
+        "GROUND_FLOOR"
+      ],
+      "notes": "Father of the Groom. Requires easy access to Mandap.",
+      "created_at": "2026-10-18T15:49:04.122Z"
+    },
+    {
+      "id": "gst-w-2",
+      "event_id": "evt-wedding-001",
+      "household_group_id": "hh-iyer",
+      "first_name": "Ramanathan",
+      "last_name": "Iyer",
+      "email": "r.iyer@example.com",
+      "phone": "+91 98400 54321",
+      "invitation_status": "DELIVERED",
+      "rsvp_status": "ATTENDING",
+      "plus_one_allowed": true,
+      "plus_one_name": "Meenakshi Iyer",
+      "dietary_restrictions": [
+        "VEG"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR"
+      ],
+      "notes": "Grandfather of the Bride. Requires wheelchair ramp access.",
+      "created_at": "2026-10-18T15:49:04.122Z"
+    },
+    {
+      "id": "gst-w-3",
+      "event_id": "evt-wedding-001",
+      "household_group_id": "hh-friends",
+      "first_name": "Rohan",
+      "last_name": "Mehta",
+      "email": "rohan.mehta@tech.io",
+      "phone": "+91 99100 88223",
+      "invitation_status": "DELIVERED",
+      "rsvp_status": "ATTENDING",
+      "plus_one_allowed": false,
+      "dietary_restrictions": [
+        "GLUTEN_FREE"
+      ],
+      "accessibility_needs": [],
+      "created_at": "2026-10-18T15:49:04.122Z"
+    },
+    {
+      "id": "gst-w-4",
+      "event_id": "evt-wedding-001",
+      "household_group_id": "hh-friends",
+      "first_name": "Ananya",
+      "last_name": "Roy",
+      "email": "ananya.roy@design.in",
+      "phone": "+91 98310 99441",
+      "invitation_status": "DELIVERED",
+      "rsvp_status": "ATTENDING",
+      "plus_one_allowed": false,
+      "dietary_restrictions": [
+        "VEGAN"
+      ],
+      "accessibility_needs": [],
+      "created_at": "2026-10-18T15:49:04.122Z"
+    },
+    {
+      "id": "gst-w-5",
+      "event_id": "evt-wedding-001",
+      "household_group_id": "hh-friends",
+      "first_name": "Vikram",
+      "last_name": "Malhotra",
+      "email": "vikram.m@investments.com",
+      "phone": "+91 98110 33445",
+      "invitation_status": "SENT",
+      "rsvp_status": "TENTATIVE",
+      "plus_one_allowed": true,
+      "dietary_restrictions": [
+        "NUT_ALLERGY"
+      ],
+      "accessibility_needs": [],
+      "notes": "Awaiting confirmation on business travel schedule.",
+      "created_at": "2026-10-19T15:49:04.122Z"
+    },
+    {
+      "id": "gst-w-6",
+      "event_id": "evt-wedding-001",
+      "first_name": "Karan",
+      "last_name": "Johar",
+      "email": "karan.j@cinema.in",
+      "invitation_status": "SENT",
+      "rsvp_status": "NO_RESPONSE",
+      "plus_one_allowed": false,
+      "dietary_restrictions": [],
+      "accessibility_needs": [],
+      "created_at": "2026-10-19T15:49:04.122Z"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "first_name": "Aadhav",
+      "last_name": "Kumar",
+      "email": "aadhav@example.com",
+      "rsvp_status": "ATTENDING",
+      "plus_ones_count": 1,
+      "dietary_restrictions": [
+        "VEGETARIAN",
+        "JAIN"
+      ],
+      "accessibility_needs": [
+        "WHEELCHAIR"
+      ],
+      "id": "gst-1792856946169-meoro",
+      "created_at": "2026-10-24T15:49:06.169Z"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "first_name": "Simran",
+      "last_name": "Kaur",
+      "email": "simran@example.com",
+      "rsvp_status": "ATTENDING",
+      "plus_ones_count": 0,
+      "dietary_restrictions": [
+        "GLUTEN_FREE"
+      ],
+      "id": "gst-1792856946178-70hco",
+      "created_at": "2026-10-24T15:49:06.178Z"
+    }
+  ],
+  "seatingTables": [
+    {
+      "id": "tbl-h-1",
+      "event_id": "evt-hackathon-002",
+      "name": "Hacking Pod Alpha",
+      "shape": "RECTANGULAR",
+      "capacity": 6,
+      "location_zone": "MAIN_FLOOR",
+      "accessibility_friendly": true,
+      "notes": "Equipped with dual power strips and LAN ports."
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "name": "Table 1 (VIP Front)",
+      "shape": "ROUND",
+      "capacity": 8,
+      "is_accessible": true,
+      "id": "tbl-1792856917931-yc18o"
+    },
+    {
+      "id": "tbl-w-1",
+      "event_id": "evt-wedding-001",
+      "name": "VIP Elders & Family Table 1",
+      "shape": "ROUND",
+      "capacity": 8,
+      "location_zone": "STAGE_FRONT",
+      "accessibility_friendly": true,
+      "notes": "Immediate step-free access to Mandap ramp for grandparents."
+    },
+    {
+      "id": "tbl-w-2",
+      "event_id": "evt-wedding-001",
+      "name": "Groom Family Table 2",
+      "shape": "ROUND",
+      "capacity": 10,
+      "location_zone": "MAIN_FLOOR",
+      "accessibility_friendly": true,
+      "notes": "Close to central dining passage."
+    },
+    {
+      "id": "tbl-w-3",
+      "event_id": "evt-wedding-001",
+      "name": "Friends & Colleagues Table 3",
+      "shape": "ROUND",
+      "capacity": 8,
+      "location_zone": "MAIN_FLOOR",
+      "accessibility_friendly": false,
+      "notes": "Next to live mocktail bar."
+    },
+    {
+      "id": "tbl-w-4",
+      "event_id": "evt-wedding-001",
+      "name": "Garden Courtyard Table 4",
+      "shape": "ROUND",
+      "capacity": 8,
+      "location_zone": "OUTDOOR",
+      "accessibility_friendly": false
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "name": "Table 1 (VIP Front)",
+      "shape": "ROUND",
+      "capacity": 8,
+      "is_accessible": true,
+      "id": "tbl-1792856946188-uv918"
+    }
+  ],
+  "seatingAssignments": [
+    {
+      "id": "sa-h-1",
+      "table_id": "tbl-h-1",
+      "guest_id": "gst-h-1",
+      "seat_number": 1,
+      "assigned_at": "2026-10-23T15:14:55.890Z"
+    },
+    {
+      "id": "sa-h-2",
+      "table_id": "tbl-h-1",
+      "guest_id": "gst-h-2",
+      "seat_number": 2,
+      "assigned_at": "2026-10-23T15:14:55.890Z"
+    },
+    {
+      "id": "sa-w-1",
+      "table_id": "tbl-w-1",
+      "guest_id": "gst-w-1",
+      "seat_number": 1,
+      "assigned_at": "2026-10-20T15:49:04.122Z"
+    },
+    {
+      "id": "sa-w-2",
+      "table_id": "tbl-w-1",
+      "guest_id": "gst-w-2",
+      "seat_number": 2,
+      "assigned_at": "2026-10-20T15:49:04.122Z"
+    },
+    {
+      "id": "sa-w-3",
+      "table_id": "tbl-w-3",
+      "guest_id": "gst-w-3",
+      "seat_number": 1,
+      "assigned_at": "2026-10-21T15:49:04.122Z"
+    },
+    {
+      "id": "sa-w-4",
+      "table_id": "tbl-w-3",
+      "guest_id": "gst-w-4",
+      "seat_number": 2,
+      "assigned_at": "2026-10-21T15:49:04.122Z"
+    },
+    {
+      "id": "sa-1792856946197-7jf8p",
+      "table_id": "tbl-1792856946188-uv918",
+      "guest_id": "gst-1792856946169-meoro",
+      "seat_number": 1,
+      "assigned_at": "2026-10-24T15:49:06.197Z"
+    },
+    {
+      "id": "sa-1792856946206-klnns",
+      "table_id": "tbl-1792856946188-uv918",
+      "guest_id": "gst-1792856946178-70hco",
+      "seat_number": 2,
+      "assigned_at": "2026-10-24T15:49:06.206Z"
+    }
+  ],
+  "invitationDesigns": [
+    {
+      "id": "inv-h-1",
+      "event_id": "evt-hackathon-002",
+      "title": "TechInnovate 2026 Developer Pass",
+      "template_id": "MODERN_TECH",
+      "headline": "Code. Innovate. Deploy.",
+      "body_text": "Welcome to TechInnovate 2026! 36 hours of relentless building with world-class mentors, cutting-edge AI models, and ₹3,50,000 in prizes.",
+      "dress_code": "Casual / Developer Hoodie",
+      "venue_name": "T-Hub Innovation Center",
+      "venue_address": "Knowledge City, Raidurg, Hyderabad",
+      "date_time_display": "Saturday, June 8, 2026 at 8:00 AM IST",
+      "rsvp_deadline": "2026-11-23",
+      "primary_color": "#1E1B4B",
+      "accent_color": "#38BDF8",
+      "updated_at": "2026-10-22T15:14:55.890Z"
+    },
+    {
+      "id": "inv-w-1",
+      "event_id": "evt-wedding-001",
+      "title": "Aarav & Meera Wedding Invitation",
+      "template_id": "ELEGANT_WEDDING",
+      "headline": "Two Hearts, One Celebration",
+      "body_text": "Together with their families, Aarav Sharma and Meera Iyer joyfully invite you to celebrate their sacred wedding ceremony and union.",
+      "dress_code": "Traditional Indian Festive / Formal Silk",
+      "venue_name": "The Grand Palace Hall",
+      "venue_address": "Palace Cross Road, Vasanth Nagar, Bangalore",
+      "date_time_display": "Sunday, August 23, 2026 at 9:00 AM IST",
+      "rsvp_deadline": "2027-01-22",
+      "primary_color": "#5B21B6",
+      "accent_color": "#F59E0B",
+      "updated_at": "2026-10-19T15:49:04.122Z"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "title": "Royal Heritage Wedding Invitation",
+      "template_id": "ROYAL_GOLD",
+      "headline": "Celebrate with Priya & Rohan",
+      "body_text": "Join us for an unforgettable evening at {{venue}} on {{date}}.",
+      "venue_name": "Taj West End, Bangalore",
+      "venue_address": "Race Course Rd, High Grounds, Bengaluru",
+      "date_time_display": "November 6, 2026 at 5:00 PM",
+      "primary_color": "#1E1B4B",
+      "accent_color": "#D97706",
+      "id": "inv-1792856946214",
+      "updated_at": "2026-10-24T15:49:06.214Z"
+    }
+  ],
+  "communicationLogs": [
+    {
+      "id": "comm-w-1",
+      "event_id": "evt-wedding-001",
+      "guest_id": "gst-w-1",
+      "channel": "EMAIL",
+      "message_type": "FORMAL_INVITE",
+      "status": "DELIVERED",
+      "sent_at": "2026-10-18T15:49:04.122Z",
+      "content_preview": "Dear Rajesh Sharma, you and your family are cordially invited to Aarav & Meera's Wedding..."
+    },
+    {
+      "id": "comm-w-2",
+      "event_id": "evt-wedding-001",
+      "guest_id": "gst-w-6",
+      "channel": "WHATSAPP_SIMULATED",
+      "message_type": "RSVP_REMINDER",
+      "status": "SENT",
+      "sent_at": "2026-10-23T15:49:04.122Z",
+      "content_preview": "Namaste Karan! Just a gentle reminder to please confirm your attendance for Aarav & Meera's Wedding by..."
+    }
+  ],
+  "eventInsights": [
+    {
+      "id": "ins-w-1",
+      "event_id": "evt-wedding-001",
+      "category": "BUDGET_RISK",
+      "severity": "INFO",
+      "title": "Catering Quoted Amount Fully Committed",
+      "description": "Catering quotation from Gourmet Feast Caterers (₹2,80,000) was accepted and aligns with the allocated budget with 0 variance.",
+      "evidence_data": {
+        "category": "Catering & Feast",
+        "allocated": 280000,
+        "actual": 280000,
+        "variance": 0
+      },
+      "recommended_action": "Lock in final headcount 14 days prior to avoid per-plate penalties.",
+      "action_type": "NAVIGATE",
+      "created_at": "2026-10-22T15:49:04.123Z"
+    },
+    {
+      "id": "ins-w-2",
+      "event_id": "evt-wedding-001",
+      "category": "RSVP_ALERT",
+      "severity": "WARNING",
+      "title": "1 Pending RSVP with Dietary Restrictions",
+      "description": "Vikram Malhotra has tentative status with a noted Nut Allergy. Ensure confirmation before finalizing chef ingredient order.",
+      "evidence_data": {
+        "guest_id": "gst-w-5",
+        "name": "Vikram Malhotra",
+        "allergy": "NUT_ALLERGY"
+      },
+      "recommended_action": "Send personalized WhatsApp reminder.",
+      "action_type": "OPEN_MODAL",
+      "created_at": "2026-10-23T15:49:04.123Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-h-1",
+      "event_id": "evt-hackathon-002",
+      "title": "Sign Venue Agreement Completed",
+      "message": "T-Hub facility sponsorship agreement has been marked completed.",
+      "category": "TASK",
+      "priority": "MEDIUM",
+      "read": false,
+      "action_url": "/events/evt-hackathon-002/timeline",
+      "created_at": "2026-10-23T15:14:55.890Z"
+    },
+    {
+      "id": "notif-w-1",
+      "event_id": "evt-wedding-001",
+      "title": "Vendor Quotation Accepted",
+      "message": "Gourmet Feast Caterers quotation of ₹2,80,000 has been committed to the event budget.",
+      "category": "VENDOR",
+      "priority": "MEDIUM",
+      "read": false,
+      "action_url": "/events/evt-wedding-001/vendors",
+      "created_at": "2026-10-17T15:49:04.123Z"
+    },
+    {
+      "id": "notif-w-2",
+      "event_id": "evt-wedding-001",
+      "title": "Mandap Floral Setup Due for Review",
+      "message": "Task 'Approve Mandap Floral Concept' is currently In Progress and due in 15 days.",
+      "category": "TASK",
+      "priority": "LOW",
+      "read": true,
+      "action_url": "/events/evt-wedding-001/timeline",
+      "created_at": "2026-10-22T15:49:04.123Z"
+    }
+  ],
+  "eventSettings": [
+    {
+      "event_id": "evt-hackathon-002",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 70000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:14:55.890Z"
+    },
+    {
+      "event_id": "evt-1792854896059-5nupy",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:14:56.059Z"
+    },
+    {
+      "event_id": "evt-1792854933780-6h3d1",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:15:33.780Z"
+    },
+    {
+      "event_id": "evt-1792855041157-j2eht",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:17:21.157Z"
+    },
+    {
+      "event_id": "evt-1792855291559-tzwoo",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:21:31.559Z"
+    },
+    {
+      "event_id": "evt-1792855447090-38k81",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:24:07.090Z"
+    },
+    {
+      "event_id": "evt-1792855482752-h6gtn",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:24:42.752Z"
+    },
+    {
+      "event_id": "evt-1792855771300-475kg",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:29:31.300Z"
+    },
+    {
+      "event_id": "evt-1792855886285-izaob",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:31:26.285Z"
+    },
+    {
+      "event_id": "evt-1792856056681-nbead",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:34:16.681Z"
+    },
+    {
+      "event_id": "evt-1792856380349-donbw",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:39:40.349Z"
+    },
+    {
+      "event_id": "evt-1792856479955-4q7sx",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:41:19.955Z"
+    },
+    {
+      "event_id": "evt-1792856575427-4hmsw",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:42:55.428Z"
+    },
+    {
+      "event_id": "evt-1792856701467-yfzie",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:45:01.467Z"
+    },
+    {
+      "event_id": "evt-1792856844434-qimle",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:47:24.434Z"
+    },
+    {
+      "event_id": "evt-1792856917007-lkeji",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:48:37.007Z"
+    },
+    {
+      "event_id": "evt-wedding-001",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 140000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:49:04.123Z"
+    },
+    {
+      "event_id": "evt-1792856945141-37nhs",
+      "currency": "INR",
+      "timezone": "Asia/Kolkata",
+      "default_catering_budget_per_guest": 150000,
+      "notifications_enabled": true,
+      "ai_features_enabled": true,
+      "privacy_mode": false,
+      "updated_at": "2026-10-24T15:49:05.141Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "aud-1792856844945",
+      "event_id": "evt-1792856844434-qimle",
+      "action": "VENDOR_QUOTE_ACCEPTED",
+      "entity_type": "QUOTATION",
+      "entity_id": "qt-1792856844934-gukso",
+      "actor": "Event Organizer",
+      "details": {
+        "vendor": "Heritage Royal Caterers",
+        "line_item": "li-1792856844722-6juo5"
+      },
+      "timestamp": "2026-10-24T15:47:24.945Z"
+    },
+    {
+      "id": "aud-1792856917878",
+      "event_id": "evt-1792856917007-lkeji",
+      "action": "VENDOR_QUOTE_ACCEPTED",
+      "entity_type": "QUOTATION",
+      "entity_id": "qt-1792856917868-uvj4q",
+      "actor": "Event Organizer",
+      "details": {
+        "amount": 22000000,
+        "vendor": "Heritage Royal Caterers",
+        "line_item": "li-1792856917543-4m1tz"
+      },
+      "timestamp": "2026-10-24T15:48:37.878Z"
+    },
+    {
+      "id": "aud-w-1",
+      "event_id": "evt-wedding-001",
+      "action": "EVENT_CREATED",
+      "entity_type": "EVENT",
+      "entity_id": "evt-wedding-001",
+      "actor": "Aarav Sharma (Organizer)",
+      "details": {
+        "title": "Aarav & Meera's Traditional Wedding",
+        "guest_count": 200,
+        "budget": 800000
+      },
+      "timestamp": "2026-10-17T15:49:04.123Z"
+    },
+    {
+      "id": "aud-w-2",
+      "event_id": "evt-wedding-001",
+      "action": "VENDOR_QUOTE_ACCEPTED",
+      "entity_type": "QUOTATION",
+      "entity_id": "qt-w-catering-1",
+      "actor": "Aarav Sharma",
+      "details": {
+        "vendor": "Gourmet Feast Caterers",
+        "amount": 280000,
+        "linked_line_item": "li-w-2"
+      },
+      "timestamp": "2026-10-17T15:49:04.123Z"
+    },
+    {
+      "id": "aud-1792856946133",
+      "event_id": "evt-1792856945141-37nhs",
+      "action": "VENDOR_QUOTE_ACCEPTED",
+      "entity_type": "QUOTATION",
+      "entity_id": "qt-1792856946125-vs8ey",
+      "actor": "Event Organizer",
+      "details": {
+        "amount": 22000000,
+        "vendor": "Heritage Royal Caterers",
+        "line_item": "li-1792856945827-6czjh"
+      },
+      "timestamp": "2026-10-24T15:49:06.133Z"
     }
   ]
 }

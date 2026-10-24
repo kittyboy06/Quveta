@@ -20,6 +20,8 @@ import { Badge } from "@/shared/design-system/Badge";
 import { Button } from "@/shared/design-system/Button";
 import { formatMoney, createMoney, toMajorUnits } from "@/shared/types/money";
 
+export const dynamic = "force-dynamic";
+
 export default function DashboardPage() {
   const events = repository.getEvents();
   const allTasks: any[] = [];

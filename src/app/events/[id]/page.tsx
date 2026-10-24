@@ -13,6 +13,14 @@ import {
   ShieldCheck,
   CheckCircle2,
   AlertTriangle,
+  Store,
+  ListOrdered,
+  Grid3X3,
+  Mail,
+  Bot,
+  Bell,
+  FileText,
+  Settings,
 } from "lucide-react";
 import { repository } from "@/shared/db/supabase";
 import { Card, CardHeader } from "@/shared/design-system/Card";
@@ -35,6 +43,17 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
   const categories = repository.getCategoriesByEventId(id);
   const lineItems = repository.getLineItemsByEventId(id);
   const tasks = repository.getTasksByEventId(id);
+  const vendors = repository.getVendorsByEventId(id);
+  const guests = repository.getGuestsByEventId(id);
+  const tables = repository.getSeatingTablesByEventId(id);
+  const runSheet = repository.getRunSheetItemsByEventId(id);
+  const notifications = repository.getNotificationsByEventId(id);
+
+  const unreadNotifs = notifications.filter((n) => !n.read).length;
+  const bookedVendors = vendors.filter((v) => v.status === "BOOKED").length;
+  const attendingGuests = guests.filter(
+    (g) => g.rsvp_status === "ATTENDING" || g.rsvp_status === "CONFIRMED"
+  ).length;
 
   const totalPlannedMinor = lineItems.reduce((acc, li) => acc + li.planned_amount, 0);
   const targetBudgetMoney = createMoney(event.target_budget, event.currency);
@@ -254,6 +273,253 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
               </p>
               <div className="mt-4 flex items-center text-xs font-semibold text-blue-700 group-hover:translate-x-1 transition-transform">
                 <span>View Timeline & Dependencies</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </div>
+            </Card>
+          </Link>
+        </div>
+      </div>
+
+      {/* Sprint A: Guest & Event Coordination Suite */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-lg font-bold tracking-tight text-slate-900">
+            Guest & Event Coordination Suite
+          </h2>
+          <Badge variant="purple" className="text-xs">Sprint A</Badge>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {/* Module 07: Vendors & Quotations */}
+          <Link href={`/events/${id}/vendors`} className="group block">
+            <Card className="h-full hover:border-brand-400 hover:shadow-md transition-all">
+              <div className="flex items-start justify-between mb-3">
+                <div className="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-800">
+                  <Store className="w-5 h-5" />
+                </div>
+                <Badge variant="neutral">Module 07</Badge>
+              </div>
+              <h3 className="text-base font-bold text-slate-900 group-hover:text-brand-700 transition-colors">
+                Vendors & Quotations
+              </h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                Side-by-side quote comparison, inclusion verification, and 1-click quote acceptance directly linked to budget line items.
+              </p>
+              <div className="mt-3 flex items-center gap-2">
+                <span className="text-[11px] font-semibold text-brand-900 bg-brand-50 px-2 py-0.5 rounded">
+                  {bookedVendors}/{vendors.length} Booked
+                </span>
+              </div>
+              <div className="mt-4 flex items-center text-xs font-semibold text-brand-700 group-hover:translate-x-1 transition-transform">
+                <span>Manage Suppliers</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </div>
+            </Card>
+          </Link>
+
+          {/* Module 08: Run Sheet */}
+          <Link href={`/events/${id}/run-sheet`} className="group block">
+            <Card className="h-full hover:border-brand-400 hover:shadow-md transition-all">
+              <div className="flex items-start justify-between mb-3">
+                <div className="w-10 h-10 rounded-xl bg-violet-100 flex items-center justify-center text-violet-800">
+                  <ListOrdered className="w-5 h-5" />
+                </div>
+                <Badge variant="neutral">Module 08</Badge>
+              </div>
+              <h3 className="text-base font-bold text-slate-900 group-hover:text-violet-700 transition-colors">
+                Event-Day Run Sheet
+              </h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                Minute-by-minute operational cue sheet, live progress tracker, cascading delay engine, and stage incident logging.
+              </p>
+              <div className="mt-3 flex items-center gap-2">
+                <span className="text-[11px] font-semibold text-violet-900 bg-violet-50 px-2 py-0.5 rounded">
+                  {runSheet.length} Operational Cues
+                </span>
+              </div>
+              <div className="mt-4 flex items-center text-xs font-semibold text-violet-700 group-hover:translate-x-1 transition-transform">
+                <span>Open Run Sheet</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </div>
+            </Card>
+          </Link>
+
+          {/* Module 09: Guest Management */}
+          <Link href={`/events/${id}/guests`} className="group block">
+            <Card className="h-full hover:border-brand-400 hover:shadow-md transition-all">
+              <div className="flex items-start justify-between mb-3">
+                <div className="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center text-purple-800">
+                  <Users className="w-5 h-5" />
+                </div>
+                <Badge variant="neutral">Module 09</Badge>
+              </div>
+              <h3 className="text-base font-bold text-slate-900 group-hover:text-purple-700 transition-colors">
+                Guests & RSVP Tracking
+              </h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                Deterministic attendance math, household groups, dietary/accessibility flags, and RFC-4180 CSV import/export.
+              </p>
+              <div className="mt-3 flex items-center gap-2">
+                <span className="text-[11px] font-semibold text-purple-900 bg-purple-50 px-2 py-0.5 rounded">
+                  {attendingGuests}/{guests.length} Confirmed
+                </span>
+              </div>
+              <div className="mt-4 flex items-center text-xs font-semibold text-purple-700 group-hover:translate-x-1 transition-transform">
+                <span>Manage Guests</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </div>
+            </Card>
+          </Link>
+
+          {/* Module 10: Seating Planner */}
+          <Link href={`/events/${id}/seating`} className="group block">
+            <Card className="h-full hover:border-brand-400 hover:shadow-md transition-all">
+              <div className="flex items-start justify-between mb-3">
+                <div className="w-10 h-10 rounded-xl bg-teal-100 flex items-center justify-center text-teal-800">
+                  <Grid3X3 className="w-5 h-5" />
+                </div>
+                <Badge variant="neutral">Module 10</Badge>
+              </div>
+              <h3 className="text-base font-bold text-slate-900 group-hover:text-teal-700 transition-colors">
+                Seating Planner
+              </h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                Interactive floor plan layout with strict capacity limits, catering dietary summaries per table, and wheelchair accessibility alerts.
+              </p>
+              <div className="mt-3 flex items-center gap-2">
+                <span className="text-[11px] font-semibold text-teal-900 bg-teal-50 px-2 py-0.5 rounded">
+                  {tables.length} Tables Configured
+                </span>
+              </div>
+              <div className="mt-4 flex items-center text-xs font-semibold text-teal-700 group-hover:translate-x-1 transition-transform">
+                <span>Open Floor Plan</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </div>
+            </Card>
+          </Link>
+
+          {/* Module 11: Invitations & Comms */}
+          <Link href={`/events/${id}/invitations`} className="group block">
+            <Card className="h-full hover:border-brand-400 hover:shadow-md transition-all">
+              <div className="flex items-start justify-between mb-3">
+                <div className="w-10 h-10 rounded-xl bg-pink-100 flex items-center justify-center text-pink-800">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <Badge variant="neutral">Module 11</Badge>
+              </div>
+              <h3 className="text-base font-bold text-slate-900 group-hover:text-pink-700 transition-colors">
+                Invitations & Comms
+              </h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                Live WYSIWYG invitation card preview with token replacement, tone customization, and targeted RSVP reminder dispatcher.
+              </p>
+              <div className="mt-4 flex items-center text-xs font-semibold text-pink-700 group-hover:translate-x-1 transition-transform">
+                <span>Design Invitations</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </div>
+            </Card>
+          </Link>
+        </div>
+      </div>
+
+      {/* Sprint B: Intelligence, Platform & Exports Suite */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-lg font-bold tracking-tight text-slate-900">
+            Intelligence, Platform & Exports Suite
+          </h2>
+          <Badge variant="purple" className="text-xs">Sprint B</Badge>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          {/* Module 12: AI Insights */}
+          <Link href={`/events/${id}/insights`} className="group block">
+            <Card className="h-full hover:border-brand-400 hover:shadow-md transition-all">
+              <div className="flex items-start justify-between mb-3">
+                <div className="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-800">
+                  <Bot className="w-5 h-5" />
+                </div>
+                <Badge variant="purple">Module 12</Badge>
+              </div>
+              <h3 className="text-base font-bold text-slate-900 group-hover:text-amber-700 transition-colors">
+                AI Copilot & Insights
+              </h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                Grounded conversational assistant answering queries with real database numbers and 0–100% readiness score.
+              </p>
+              <div className="mt-4 flex items-center text-xs font-semibold text-amber-700 group-hover:translate-x-1 transition-transform">
+                <span>Consult Copilot</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </div>
+            </Card>
+          </Link>
+
+          {/* Module 13: Notifications */}
+          <Link href={`/events/${id}/notifications`} className="group block">
+            <Card className="h-full hover:border-brand-400 hover:shadow-md transition-all">
+              <div className="flex items-start justify-between mb-3">
+                <div className="w-10 h-10 rounded-xl bg-rose-100 flex items-center justify-center text-rose-800">
+                  <Bell className="w-5 h-5" />
+                </div>
+                <Badge variant="neutral">Module 13</Badge>
+              </div>
+              <h3 className="text-base font-bold text-slate-900 group-hover:text-rose-700 transition-colors">
+                Notifications & Alerts
+              </h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                Event-driven proactive triggers alerting on overdue tasks, budget deficits, and pending RSVP deadlines.
+              </p>
+              <div className="mt-3">
+                <span className="text-[11px] font-semibold text-rose-900 bg-rose-50 px-2 py-0.5 rounded">
+                  {unreadNotifs} Unread Alerts
+                </span>
+              </div>
+              <div className="mt-4 flex items-center text-xs font-semibold text-rose-700 group-hover:translate-x-1 transition-transform">
+                <span>View Center</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </div>
+            </Card>
+          </Link>
+
+          {/* Module 14: Reports */}
+          <Link href={`/events/${id}/reports`} className="group block">
+            <Card className="h-full hover:border-brand-400 hover:shadow-md transition-all">
+              <div className="flex items-start justify-between mb-3">
+                <div className="w-10 h-10 rounded-xl bg-cyan-100 flex items-center justify-center text-cyan-800">
+                  <FileText className="w-5 h-5" />
+                </div>
+                <Badge variant="neutral">Module 14</Badge>
+              </div>
+              <h3 className="text-base font-bold text-slate-900 group-hover:text-cyan-700 transition-colors">
+                Reports & Documents
+              </h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                Print-ready PDF manifests for caterers and coordinators, and valid RFC-4180 CSV spreadsheet downloads.
+              </p>
+              <div className="mt-4 flex items-center text-xs font-semibold text-cyan-700 group-hover:translate-x-1 transition-transform">
+                <span>Export Documents</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </div>
+            </Card>
+          </Link>
+
+          {/* Module 15: Settings */}
+          <Link href={`/events/${id}/settings`} className="group block">
+            <Card className="h-full hover:border-brand-400 hover:shadow-md transition-all">
+              <div className="flex items-start justify-between mb-3">
+                <div className="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-800">
+                  <Settings className="w-5 h-5" />
+                </div>
+                <Badge variant="neutral">Module 15</Badge>
+              </div>
+              <h3 className="text-base font-bold text-slate-900 group-hover:text-slate-700 transition-colors">
+                Settings & Evaluator Demo
+              </h3>
+              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                Currency/timezone controls, live system diagnostic health check, audit trails, and 1-click evaluator demo reset.
+              </p>
+              <div className="mt-4 flex items-center text-xs font-semibold text-slate-700 group-hover:translate-x-1 transition-transform">
+                <span>Configure & Test</span>
                 <ArrowRight className="w-3.5 h-3.5 ml-1" />
               </div>
             </Card>

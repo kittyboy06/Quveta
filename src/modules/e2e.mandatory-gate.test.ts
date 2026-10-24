@@ -183,5 +183,202 @@ describe("Non-Negotiable Acceptance Test: End-to-End Core Workflow", () => {
     const reloadedTasks = repository.getTasksByEventId(eventId);
     expect(reloadedTasks.length).toBeGreaterThan(0);
     // All approved changes are reliably preserved!
+
+    // -------------------------------------------------------------
+    // STEP 9: Module 07 - Vendor Quotation Acceptance & Budget Coupling
+    // -------------------------------------------------------------
+    const vendor = repository.createVendor({
+      event_id: eventId,
+      name: "Heritage Royal Caterers",
+      category: "CATERING",
+      contact_name: "Vikram Mehta",
+      contact_email: "vikram@heritageroyal.com",
+      status: "CONTACTED",
+    });
+
+    const quotation = repository.createQuotation({
+      vendor_id: vendor.id,
+      event_id: eventId,
+      quote_reference: "Q-HR-2026",
+      amount_minor: 22000000, // ₹2,20,000 (minor units)
+      currency: "INR",
+      valid_until: "2026-11-01",
+      deposit_required_minor: 4400000,
+      inclusions: ["3 Course Buffet", "Welcome Drinks", "Live Chaat Station"],
+      exclusions: ["Imported Wine"],
+      status: "UNDER_REVIEW",
+      line_items: [
+        { description: "Dinner Buffet (200 guests)", amount_minor: 18000000, is_mandatory: true },
+        { description: "Live Counter Staffing", amount_minor: 4000000, is_mandatory: true },
+      ],
+    });
+
+    // Accept quotation with direct link to budget
+    const acceptRes = repository.acceptQuotation(quotation.id);
+    expect(acceptRes.success).toBe(true);
+    const acceptedQuote = repository.getQuotationById(quotation.id);
+    expect(acceptedQuote?.status).toBe("ACCEPTED");
+
+    // Verify line item was updated
+    const updatedLineItems = repository.getLineItemsByEventId(eventId);
+    expect(updatedLineItems.some((li) => li.planned_amount === 22000000)).toBe(true);
+
+    // -------------------------------------------------------------
+    // STEP 10: Module 08 - Event-Day Run Sheet & Cascading Delay
+    // -------------------------------------------------------------
+    const cue1 = repository.createRunSheetItem({
+      event_id: eventId,
+      title: "Groom Baraat Arrival",
+      start_time: "17:00",
+      end_time: "18:00",
+      duration_minutes: 60,
+      category: "CEREMONY",
+      lead_person: "Lead Coordinator",
+      location: "Main Entrance",
+      status: "COMPLETED",
+    });
+
+    const cue2 = repository.createRunSheetItem({
+      event_id: eventId,
+      title: "Varmala Stage Ceremony",
+      start_time: "18:00",
+      end_time: "18:45",
+      duration_minutes: 45,
+      category: "CEREMONY",
+      lead_person: "Stage Manager",
+      location: "Grand Mandap",
+      status: "IN_PROGRESS",
+    });
+    expect(cue1.id).toBeDefined();
+    expect(cue2.id).toBeDefined();
+
+    // -------------------------------------------------------------
+    // STEP 11: Module 09 - Guest Management & Dietary Restrictions
+    // -------------------------------------------------------------
+    const guest1 = repository.createGuest({
+      event_id: eventId,
+      first_name: "Aadhav",
+      last_name: "Kumar",
+      email: "aadhav@example.com",
+      rsvp_status: "ATTENDING",
+      plus_ones_count: 1,
+      dietary_restrictions: ["VEGETARIAN", "JAIN"],
+      accessibility_needs: ["WHEELCHAIR"],
+    });
+
+    const guest2 = repository.createGuest({
+      event_id: eventId,
+      first_name: "Simran",
+      last_name: "Kaur",
+      email: "simran@example.com",
+      rsvp_status: "ATTENDING",
+      plus_ones_count: 0,
+      dietary_restrictions: ["GLUTEN_FREE"],
+    });
+    expect(guest1.id).toBeDefined();
+    expect(guest2.id).toBeDefined();
+
+    // -------------------------------------------------------------
+    // STEP 12: Module 10 - Seating Planner & Floor Plan Capacity
+    // -------------------------------------------------------------
+    const table1 = repository.createSeatingTable({
+      event_id: eventId,
+      name: "Table 1 (VIP Front)",
+      shape: "ROUND",
+      capacity: 8,
+      is_accessible: true,
+    });
+
+    const asg1 = repository.assignGuestToTable(table1.id, guest1.id);
+    const asg2 = repository.assignGuestToTable(table1.id, guest2.id);
+    expect(asg1.success).toBe(true);
+    expect(asg2.success).toBe(true);
+
+    // -------------------------------------------------------------
+    // STEP 13: Module 11 - Invitations & Token Interpolation
+    // -------------------------------------------------------------
+    const invDesign = repository.saveInvitationDesign({
+      event_id: eventId,
+      title: "Royal Heritage Wedding Invitation",
+      template_id: "ROYAL_GOLD",
+      headline: "Celebrate with Priya & Rohan",
+      body_text: "Join us for an unforgettable evening at {{venue}} on {{date}}.",
+      venue_name: "Taj West End, Bangalore",
+      venue_address: "Race Course Rd, High Grounds, Bengaluru",
+      date_time_display: "November 6, 2026 at 5:00 PM",
+      primary_color: "#1E1B4B",
+      accent_color: "#D97706",
+    });
+    expect(invDesign.template_id).toBe("ROYAL_GOLD");
+
+    // -------------------------------------------------------------
+    // STEP 14: Module 12 - AI Event Insights & 5-Pillar Readiness Score
+    // -------------------------------------------------------------
+    const { calculateReadinessScore } = await import("@/modules/insights/domain/readiness.calculator");
+    const readiness = calculateReadinessScore({
+      event: repository.getEventById(eventId)!,
+      budgetLineItems: repository.getBudgetLineItemsByEventId(eventId),
+      tasks: repository.getTasksByEventId(eventId),
+      vendors: repository.getVendorsByEventId(eventId),
+      quotations: repository.getQuotationsByEventId(eventId),
+      guests: repository.getGuestsByEventId(eventId),
+      tables: repository.getSeatingTablesByEventId(eventId),
+      assignments: repository.getSeatingAssignmentsByEventId(eventId),
+    });
+    expect(readiness.overallScore).toBeGreaterThanOrEqual(0);
+    expect(readiness.overallScore).toBeLessThanOrEqual(100);
+    expect(readiness.pillars.budget).toBeDefined();
+    expect(readiness.pillars.tasks).toBeDefined();
+    expect(readiness.pillars.vendors).toBeDefined();
+    expect(readiness.pillars.rsvp).toBeDefined();
+    expect(readiness.pillars.seating).toBeDefined();
+
+    // -------------------------------------------------------------
+    // STEP 15: Module 13 - Notifications & Automation Rules
+    // -------------------------------------------------------------
+    const notif = repository.createNotification({
+      event_id: eventId,
+      title: "Quotation Accepted & Committed",
+      message: "Heritage Royal Caterers quotation has been committed to the event budget.",
+      category: "VENDOR",
+      priority: "MEDIUM",
+      read: false,
+      action_url: `/events/${eventId}/vendors`,
+    });
+    expect(notif.id).toBeDefined();
+    const eventNotifs = repository.getNotificationsByEventId(eventId);
+    expect(eventNotifs.length).toBeGreaterThan(0);
+
+    // -------------------------------------------------------------
+    // STEP 16: Module 14 - Reports & RFC-4180 CSV Serialization
+    // -------------------------------------------------------------
+    const { getReportSnapshotAction, exportReportCsvAction } = await import(
+      "@/modules/reports/server/report.actions"
+    );
+    const reportSnapshot = await getReportSnapshotAction(eventId, "GUEST_DIETARY_ROSTER");
+    expect(reportSnapshot).not.toBeNull();
+    expect(reportSnapshot?.columns).toContain("Dietary Needs");
+    expect(reportSnapshot?.rows.length).toBeGreaterThanOrEqual(2);
+
+    const csvRes = await exportReportCsvAction(eventId, "GUEST_DIETARY_ROSTER");
+    expect(csvRes.success).toBe(true);
+    expect(csvRes.csvString).toContain("VEGETARIAN, JAIN");
+
+    // -------------------------------------------------------------
+    // STEP 17: Module 15 - System Self-Test Diagnostic & Backup
+    // -------------------------------------------------------------
+    const { runSystemDiagnosticAction, exportEventBackupAction } = await import(
+      "@/modules/settings/server/settings.actions"
+    );
+    const diagReport = await runSystemDiagnosticAction(eventId);
+    expect(diagReport).not.toBeNull();
+    expect(diagReport?.relationalIntegrity.passed).toBe(true);
+    expect(diagReport?.relationalIntegrity.orphanedRecordsCount).toBe(0);
+
+    const backupRes = await exportEventBackupAction(eventId);
+    expect(backupRes.success).toBe(true);
+    expect(backupRes.jsonString).toContain("Heritage Royal Caterers");
+    expect(backupRes.jsonString).toContain("Aadhav");
+
   });
 });
