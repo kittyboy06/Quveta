@@ -1,0 +1,74 @@
+# Quveta — Competition Scoring Constraints
+
+Optimize development for the PromptWars Challenge 5 evaluation criteria. Prioritize the following areas:
+
+## 1. Code Quality — Highest Priority
+- Use clean, readable, maintainable, modular code.
+- Follow consistent naming conventions and project structure.
+- Avoid duplicated logic, unnecessary abstractions, and monolithic UI components.
+- Use appropriate TypeScript types and clear module boundaries.
+- Separate UI, business logic, database access, and AI orchestration.
+- Handle errors explicitly; avoid silent failures and excessive use of `any`.
+- Remove unused code, debug logs, dead components, and unnecessary dependencies.
+- Ensure the project builds successfully.
+
+## 2. Problem Statement Alignment — Highest Priority
+- Build a genuine AI-powered event planner, not merely a chatbot or static event generator.
+- Ensure real user inputs influence generated plans.
+- Implement event budgets, tasks, timelines, and personalized recommendations.
+- Demonstrate meaningful adaptation when the budget, guest count, date, or priorities change.
+- Make the adaptive budget simulator the primary differentiator.
+- Ensure the core workflow works end to end.
+
+## 3. Security
+- Never expose AI API keys or other secrets in frontend code or GitHub.
+- Validate all user inputs and AI-generated outputs.
+- Implement appropriate authorization and database access controls.
+- Protect private event data.
+- Handle external API failures safely.
+- Use secure production configuration.
+
+## 4. Efficiency
+- Avoid unnecessary AI calls and repeated plan generation.
+- Update only the affected parts of a plan when feasible.
+- Use efficient database queries and appropriate indexes.
+- Avoid unnecessary re-renders and oversized dependencies.
+- Do not introduce microservices or complex infrastructure without a clear need.
+- Keep loading times and AI response latency reasonable.
+
+## 5. Testing
+- Add meaningful unit tests for budget calculations, constraints, and timeline logic.
+- Add integration tests for AI validation, persistence, and plan updates.
+- Add end-to-end tests for the primary user journey.
+- Test malformed AI responses, API failures, invalid inputs, and infeasible constraints.
+- Verify that rejected proposals do not modify saved plans.
+- Fix failing critical tests before submission.
+
+## 6. Accessibility
+- Use semantic HTML and accessible form labels.
+- Support keyboard navigation and visible focus states.
+- Maintain adequate color contrast.
+- Make status information understandable without relying only on color.
+- Provide accessible alternatives for charts and visual budget breakdowns.
+- Test responsive layouts on mobile and desktop browsers.
+
+## 7. Demonstrable Product Quality
+- No fake functionality, dead buttons, or misleading placeholder data.
+- Show correct financial calculations and explainable AI recommendations.
+- Preserve approved decisions and allow users to review proposed changes.
+- Demonstrate persistent data after reload.
+- Include loading, empty, error, and success states.
+- Verify the deployed application, not just the local build.
+
+## 8. Submission Quality
+- Provide a complete GitHub repository and clear README.
+- Document the architecture, AI tools, prompt flow, setup, and testing.
+- Provide a working deployed project link.
+- Record a video walkthrough demonstrating real functionality.
+- Prepare the required LinkedIn post covering AI tool selection, architecture, prompt evolution, and personal contribution.
+- Verify every deliverable before final submission.
+
+## Mandatory Development Gate
+Before adding optional features, verify that a user can create an event, generate a personalized plan, change the budget, inspect mathematically correct trade-offs, approve or reject suggestions, change the event date, see affected tasks update, and reload the application without losing approved changes.
+
+Do not invent competition scoring weights or claim compliance without evidence. Prioritize code quality and problem-statement alignment first, followed by security, efficiency, testing, and accessibility, consistent with the challenge briefing.

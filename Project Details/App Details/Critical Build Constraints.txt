@@ -1,0 +1,102 @@
+# Quveta — Critical Build Constraints
+
+## 1. Challenge Alignment
+- Build a functional web application, not an Android app or static prototype.
+- Solve real event-planning problems, not just generate generic ideas or checklists.
+- Every generated plan must reflect actual user inputs.
+- Prioritize code quality and problem-statement alignment.
+- Do not add features merely to increase the feature count.
+
+## 2. Core Product Differentiator
+- Make the Adaptive Budget Simulator the signature feature.
+- Users must be able to change budgets, guest counts, event dates, and priorities.
+- Show original versus proposed plans.
+- Explain why each recommendation is made and what trade-offs it creates.
+- Preserve user-defined must-haves whenever feasible.
+- Let users accept, reject, or manually adjust proposed changes.
+- Never silently overwrite the existing plan.
+
+## 3. Financial Accuracy
+- Never rely on an LLM for authoritative financial arithmetic.
+- Calculate totals, remaining budgets, percentage changes, and per-guest costs in application code.
+- Clearly distinguish fixed costs, variable costs, estimates, and verified quotations.
+- Detect budget overruns and infeasible targets.
+- Never invent vendor prices, availability, ratings, or quotations.
+- Explain when a target budget cannot satisfy all constraints.
+
+## 4. Stateful and Adaptive Planning
+- Maintain the existing event plan across conversations and revisions.
+- Do not regenerate the entire plan when one constraint changes.
+- Update only affected budget items, tasks, deadlines, and dependencies where possible.
+- Preserve unaffected user-approved decisions.
+- When event dates change, identify urgent, overdue, blocked, and infeasible tasks.
+- Detect downstream effects when prerequisite tasks are delayed.
+- Store plan versions so users can review or restore previous versions.
+
+## 5. AI Reliability
+- Use AI for interpreting preferences, proposing alternatives, generating ideas, and explaining trade-offs.
+- Use deterministic code for calculations, validation, date arithmetic, and dependency checks.
+- Require structured AI outputs and validate them against schemas.
+- Reject malformed, incomplete, or contradictory AI responses.
+- Ask focused follow-up questions when essential information is missing.
+- Never present assumptions as confirmed facts.
+- Do not let AI output bypass application validation or user approval.
+
+## 6. Architecture
+- Use a modular monolith, not microservices.
+- Keep one backend application with clearly separated modules for events, budgeting, planning, timelines, and AI orchestration.
+- Keep business logic out of UI components.
+- Separate the AI orchestration layer from deterministic domain logic.
+- Use clear interfaces between modules.
+- Avoid unnecessary dependencies and infrastructure.
+- Do not rewrite existing working architecture without a concrete reason.
+
+## 7. User Experience
+- Prioritize a clear, modern, responsive interface.
+- Make the primary workflow easy: create event → generate plan → change a constraint → compare recommendations → approve changes.
+- Display budget totals and schedule conflicts clearly.
+- Include loading, empty, error, and success states.
+- Ensure every visible control performs its advertised action.
+- Do not use fake charts, placeholder buttons, or hardcoded dashboard data disguised as real functionality.
+- Make the application keyboard-accessible and screen-reader-friendly.
+
+## 8. Data, Security, and Privacy
+- Validate inputs on both the frontend and backend.
+- Keep AI API keys and secrets on the server.
+- Enforce authorization for user-owned resources if accounts are implemented.
+- Use secure database policies and production-safe configuration.
+- Avoid collecting unnecessary personal data.
+- Never expose private event data through predictable public identifiers.
+- Do not log credentials or unnecessary sensitive information.
+
+## 9. Testing
+- Test financial calculations and budget constraints.
+- Test dependency validation and schedule changes.
+- Test malformed AI responses and external API failures.
+- Test plan approval, rejection, and persistence.
+- Verify that rejected proposals do not change saved plans.
+- Test the full workflow from event creation to an approved revised plan.
+- Run tests and production builds; fix critical failures before adding more features.
+- Verify the deployed application, not only the local development environment.
+
+## 10. Implementation Discipline
+- Inspect the repository before making changes.
+- Implement incrementally and keep the application runnable.
+- Complete critical workflows before optional features.
+- Avoid overengineering and unnecessary abstractions.
+- Do not claim tests, integrations, or deployment succeeded without evidence.
+- Document limitations and unsupported capabilities honestly.
+- Prefer a small number of complete, reliable features over many incomplete features.
+
+## 11. Submission Readiness
+- Provide a clean GitHub repository and a useful README.
+- Document setup, architecture, AI usage, prompt flow, environment variables, and tests.
+- Ensure the deployed project link works.
+- Record a video showing genuine end-to-end functionality, especially adaptive budget and timeline changes.
+- Prepare the LinkedIn post covering AI tools, tool selection, architecture, prompt evolution, and personal contribution.
+- Before final submission, verify every deliverable and avoid submitting a weaker revision after a stronger one.
+
+## Non-Negotiable Acceptance Test
+A user must be able to create a realistic event, generate a personalized plan, reduce the budget, inspect mathematically correct trade-offs, reject one suggestion and accept another, move the event date, see affected tasks updated, and reload the application without losing approved changes.
+
+Do not consider Quveta complete until this workflow works reliably end to end.

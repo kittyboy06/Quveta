@@ -1,0 +1,260 @@
+# PromptWars Challenge 05: Celebration & Event Planner – Deep Research Report
+
+**Executive Summary:** This report surveys the state of AI-powered event planning tools and identifies gaps to address. Popular solutions (wedding planners like TheWeddingPlanner.ai and WedGenie, general planners like LOMAevents and easy-peasy.ai) generate tasks, timelines, budgets and some content, but tend to be one-shot or specialized. They often lack robust plan adaptation, verifiable data (especially vendor/pricing), collaboration features, and accessible/resilient codebases. The proposed solution should focus on **core planning workflows** (timeline/tasks generation, dynamic budgeting and scheduling, RSVP/guest management) as “must” features, with optional extras (venue/supplier search, invitation design, chat-style interaction). We recommend a React+TypeScript frontend with Node/Cloud Run backend, Supabase/Postgres for persistence, and Google Gemini (or equivalent) for structured AI generation. Prompt engineering should enforce JSON schemas and incremental refinement (with strict output validation) to avoid hallucinations. A comprehensive test suite (unit, integration, end-to-end, and accessibility) plus CI/CD pipelines will ensure quality and security. A unique “adaptive budget analysis” module (allowing users to slide budget or guest count and see AI-driven plan adjustments) is proposed to stand out. Ethical safeguards include clear AI disclaimers (to prevent misinformation) and strong data privacy. We outline an 8-step implementation roadmap (~2 weeks) and suggest LinkedIn content emphasizing the AI-driven planning flow and prompt tuning.
+
+## 1. Existing AI Event-Planner Solutions
+
+Several recent tools illustrate the capabilities and limitations of AI in event planning:
+
+- **WedGenie (AI Wedding Planner)** – A conversational wedding assistant. It “listens, learns and quietly does the heavy lifting” (e.g. research real vendors with sources, generate speeches and invitations) as the user chats. It maintains a “Wedding Board” of checklist, budget and vendor shortlists that update as the conversation continues. WedGenie boasts **real vendor data** (over 2,900 real vendors with photos, ratings and source links) and multimedia output (AI-designed invites and photos). However, it’s narrow to weddings and leverages a chat UI without exposing code quality or tests.
+
+- **TheWeddingPlanner.ai** – A subscription wedding app that generates 70–100 tasks, budget allocations and a timeline when you input date, location, budget, etc. It highlights **AI-powered features** like a timeline generator, budget recommendations, vendor search and RSVP management. Users can then search vendors, track RSVPs, seating charts, etc. Its marketing touts planning “from engaged to organized in minutes”. This shows AI can produce structured plans, but it’s proprietary (no open docs), and likely uses static prompts once per plan.
+
+- **LOMAevents** – An AI event planning mobile app (iPad/iPhone) that advertises: “Plan any event in one sentence. AI builds the tasks, timeline, and budget” from a one-line description. It also offers animated invites and RSVP pages. The interface has a 4-tab “planning hub” (Tasks, Itinerary, RSVP, Budget) with drag-and-drop timeline and guest management. LOMA integrates Google/Yelp venue search and even a recipe importer. It shows how far mobile UIs can go: full planner with calendar sync, vendor lookup and in-app invites. Still, it’s proprietary and complex (not easily replicable by a solo developer under time constraints).
+
+- **Easy-Peasy Event Planner** – A free web generator. You enter event name, location, guest count, etc. and it outputs in seconds a full plan: tasks, timetable (running backward from event day), a categorized checklist, budget line-items, and a day-of runsheet. For example, it produces agendas, catering menu suggestions, decor ideas and a budget breakdown. It supports weddings, corporate events, parties, etc. This shows modern LLMs (likely GPT-4) can quickly produce rich text plans. However, it is *one-shot*: the output is static text on the page. There is no stateful UI or persistent plan. It also risks AI hallucinations (e.g. arbitrary budget numbers).
+
+- **Spark (AI for Events)** – A web platform (by event industry pros) offering AI templates for tasks like writing agendas, speaker bios and content creation. Spark 2.0 even lets non-coders build multi-step “agents” chaining Google searches, LinkedIn data, content generation, etc. However, it focuses on content/marketing and post-event analysis, not core planning flows (tasks/timeline).
+
+- **Open-source demos** – One example is a Streamlit app (“AI Event Planner”) which uses Google’s Agent Developer Kit (ADK), GPT and DALL·E for a demo that suggests venues (via Google Maps), auto-generates an event timeline, AI invites, and even voice invitations. This illustrates a “multi-agent” approach: one agent suggests venues/budget, another generates invites/decor images, another handles output. It’s instructive as a proof-of-concept, but as a repo it’s a complex example (multi-model, PDF export, etc.). It highlights potential features like interior design visualization and sponsorship suggestions.
+
+**Key Takeaways:** These solutions confirm that *AI can generate structured plans* (tasks, timelines, budgets) and supporting content (invites, speeches, menus). Common features include timeline generation, budget breakdown, task checklists, vendor search, RSVP tracking, and content creation (invitations, speeches). Where they fall short: truly interactive, adaptive planning (changing inputs doesn’t just regenerate from scratch), verifiable data (avoiding hallucinated costs/vendors), integration (sharing plans, real-time sync), and robust engineering (maintainable, tested code). The most advanced demos (e.g. WedGenie, LOMA) focus heavily on wedding/party use-cases; corporate/business events (the original challenge covers) get less attention outside enterprise solutions like Nowadays. We should leverage their strengths (AI-driven planning) but improve on their weaknesses (hallucination, static nature, lack of validation or collaboration).
+
+## 2. Unmet Needs and Common Limitations
+
+Reviewing the above products and blog reports reveals several gaps:
+
+- **Static vs. Interactive Plans:** Many tools generate a plan once (e.g. easy-peasy). If the user later changes details (guest count, date, budget), the whole plan must be re-generated from scratch. Few provide *true adaptivity*. The challenge specifically asks that changes should intelligently update the plan. Existing apps often lack built-in logic for incremental updates or rescheduling. (LOMA’s UI does allow some drag-rescheduling, but that’s manual; WedGenie saves conversation state and might adapt a bit, but details are unclear).
+
+- **Trustworthy Data:** Without backend or real data, AI suggestions (e.g. costs, vendor names) can be **hallucinated** or irrelevant. For instance, an LLM might produce fake vendor names or plausible-sounding prices. WedGenie partly addresses this by requiring that suggested vendors have real source links. Any solution here must *guard against fabricated details*. That means either use real APIs for vendors/pricing (if any), or emphasize approximate estimates and cite sources. (Google’s Gemini “structured output” approach can help ensure numeric values meet schema, but it can still hallucinate spurious results.)
+
+- **Lack of Collaboration/Sharing:** Many tools assume one user and have no real-time multi-user features. LOMA supports inviting collaborators, which is powerful but complex to implement. Most event planning involves teams (family, vendors, venue managers). A shareable plan that allows restricted editing is currently rare in AI demos.
+
+- **Missing Advanced Planning Tools:** Features like *seating arrangement designers, vendor contract tracking, guest dietary management, real venue map integration, or mobile “day-of” execution flow* are rarely fully implemented by AI apps. The Wedding Planner app lists them (seating, day-of timeline) but we see few demos actually doing them. A unique solution could add one such advanced component.
+
+- **Generic vs. Specific:** Many solutions are wedding- or party-specific. While users might often plan weddings/birthdays, PromptWars Challenge 05 mentions *celebration and event planner* in general. The submission should ideally handle multiple event types (as easy-peasy and LOMA do). Catering to diverse event types (corporate, cultural, religious) with relevant defaults (e.g. corporate conferences need breakouts, tech needs A/V, etc.) is an open need.
+
+- **Technical Quality and Security:** We haven’t seen much about code quality or security in these solutions. Most are closed-source apps. For a PromptWars submission, code hygiene (clear architecture, testing, stateless functions, secrets handling) and security (input validation, auth, data protection) count heavily. Common limitations might include no automated tests or security checks. (The easy-peasy template states SOC2/ISO27001 compliance badges, but that’s marketing.)
+
+- **Accessibility:** None of the above mention accessibility. Modern web apps must follow accessibility best practices (semantic HTML, ARIA labels, keyboard navigation). Very few event apps publicly document this. For high score, we should follow WCAG guidelines.
+
+In summary, unmet needs include robust plan updating, integration of factual data or safe defaults, collaboration features, support for various event types, and all the nonfunctional qualities (testing, security, accessibility) that existing products overlook.
+
+## 3. Feature Prioritization (Must/Should/Could)
+
+We propose the following features, prioritised for impact (scoring alignment) and feasibility:
+
+| Priority | Feature                                           | Rationale (scoring alignment)                              |
+|:--------:|---------------------------------------------------|-----------------------------------------------------------|
+| **Must** | **AI-Generated Plan** (tasks, timeline, budget)   | Core problem requirement. Must produce a coherent plan (task list with owners, backward timeline, budget breakdown). This aligns directly with “problem alignment” and likely yields top marks. It must adapt if inputs change (challenge emphasis). Well-structured output (e.g. JSON) ensures testability and prevents hallucination. |
+| **Must** | **User Input Form & Validation** (event type/date/guest/budget) | Foundational UI. Robust form with constraints (e.g. positive numbers, required fields) and error-handling ties to “quality”. Good validation prevents garbage inputs (security/stability). |
+| **Must** | **Interactive Plan View** (editable checklist & timeline UI) | An intuitive front-end showing tasks, dates, budget items. Drag/drop timeline or mark tasks done. This is critical for user experience and “efficiency”. Ensures output is not just static text. |
+| **Must** | **Persistence & Authentication** (user accounts, save plans) | To meet code quality/security, implement user auth (even if simplistic) and save plans in DB. This prevents data loss and enables multi-session continuity. Security (hashed passwords) and session management enhance robustness. |
+| **Must** | **Accessibility Compliance** (semantic HTML, ARIA, contrast) | Accessibility is scored. We must follow WCAG: ensure all controls labelled, keyboard-nav, readable contrast. This yields points for “accessibility” and professionalism. |
+| **Must** | **Automated Testing** (unit + e2e)            | Tests are explicitly evaluated. Cover core logic (e.g. plan generation given fixed inputs), API endpoints, and at least one end-to-end scenario (e.g. user creates event and updates it). Also include accessibility tests (axe, Lighthouse). High code quality demands it. |
+| **Must** | **Prompt Guards & Output Validation**            | Crucial to avoid bad AI output. E.g. clearly instruct model: “Only use provided values; do not make up prices” and use JSON schema with strict types. After generation, validate numeric totals, dates, etc. This meets security/quality criteria by preventing “hallucinated vendor prices” as warned in challenge rules.|
+| **Should** | **Vendor/Resource Suggestions (with sources)** | Suggest relevant vendors or services using e.g. static data or Google Places (with disclaimers). While not mandatory, this adds realism. If implemented, always cite sources or skip if unknown. This ties to “useful features” and can earn creativity points, but must not hallucinate (so guard). |
+| **Should** | **Multi-Turn Chat/Refinement** (AI copilot mode) | Let user ask refinements (“change theme”, “add 10 guests”) and adjust plan using AI. This improves UX (alignment). Using an AI agent or loop to handle follow-ups can showcase iterative prompting skills. However, must ensure backend logic ties updates to model calls or local recompute. |
+| **Should** | **Notifications and Reminders** (email or SMS) | Optional but useful (bonus). E.g. send schedule email to user or reminder for upcoming task. Demonstrates integration and adds completeness. Use Twilio/Mail as needed. |
+| **Could** | **Invitation/Design Module**                   | Generate an AI-styled invitation image or digital invite text. WedGenie and LOMA do this. Not core to planning, but “nice to have” for uniqueness. Could use DALL·E or Canva API for a simple design. Ensure alt-text for accessibility. |
+| **Could** | **Seating Chart Generator**                    | For formal events, auto-assign guests to tables optimizing some criteria (friend groups, balancing). Uncommon feature. If implemented, shows creativity. Complex to do perfectly, but a simplified graph-based seating might suffice. |
+| **Could** | **Multi-User Collaboration**                   | Allow inviting others to view or edit the plan (like LOMAevents). Premium, but real-time sync is hard; even static sharing is possible (link with viewer/edit link). Enhances problem alignment and UI complexity. |
+| **Could** | **Localization/Multilingual Support**           | Planning in other languages or region formats can score points. Use i18n frameworks. Maybe out-of-scope given time. |
+
+*Rationale:* The **must** features directly address the challenge’s core (planning workflow, adaptability, problem alignment, code quality). For example, producing a structured timeline with tasks and budgets is exactly the example of “turn one sentence into a complete plan”. Ensuring accessibility and comprehensive tests aligns with the evaluation criteria (penalties otherwise). “Should” features like vendor suggestions improve usability (and match what WedGenie and WeddingPlanner advertise), but we must guard them (cite sources or skip fabrications). “Could” features (invitations, seating chart, collaboration) add polish and creativity but are lower priority if time is short. A clear table like above guides development and ensures we check off the organizer’s objectives (code quality, testing, security etc.).
+
+## 4. Technical Stack Options (Pros/Cons)
+
+We assume freedom, but suggest a modern full-stack:
+
+- **Frontend:** *React+TypeScript* (as requested). Pros: component-based UIs, strong typing, rich ecosystem (Material UI or AntD for accessibility-ready components). Large community support. Cons: bundle size (but can be optimized) and complexity of state management for novice devs. Alternatives: Vue or Svelte (smaller, easier learning curve), but we’ll use React since many devs know it and it integrates well with TypeScript. [React official docs†] cite if needed. *(GitLab or MDN could be cited for code quality, but skip)*.
+
+- **Backend:** *Node.js/Express* or Deno with Cloud Run. Pros: JavaScript end-to-end, serverless-friendly, easy integration with Google Cloud (Cloud Run containers). Node has LLM SDKs (OpenAI, Google). Cons: single-threaded (fine here), callback complexity (use async/await). Python/Flask could be used (great AI libs), but Node aligns with React/TS for unified language. Cloud Run (Docker) gives auto-scaling and private networking (to Supabase). Alternative: Firebase functions (serverless, but harder to do background jobs). We choose Node on Cloud Run for flexibility. *(Cite Google Cloud Run doc if needed: but likely skip)*.
+
+- **Persistence:** *Supabase/PostgreSQL* (given suggestion) vs alternatives. Pros: Supabase is open-source, offers auth, storage, real-time DB, row-level security. Uses familiar SQL. Cons: requires provisioning, slightly more setup than Firebase. Alternatives: Firebase Realtime/Firestore (simpler no-SQL but harder for relational tasks like seating charts). MongoDB (NoSQL) but less integrated for complex joins. We pick Supabase for structured data (events, users, tasks). [Supabase docs†] (we might cite supabase security features or data hints, but probably not needed).
+
+- **AI Integration:** *Gemini (via Google GenAI API)* or *OpenAI’s ChatGPT/Claude*. We lean Gemini (PaLM 3) because of Google’s strong support for structured output (JSON schemas, prompt refinements) and free quotas on Google Cloud (tier). OpenAI GPT-4 can be used via API (known quality), but Gemini’s JSON schema enforcement reduces hallucination. Claude may have free/trial option but less documentation. We’ll mention structured-output usage: e.g. Gemini’s `response_format` JSON schema support. Prompt patterns can thus yield predictable JSON. We should cite Google’s developer docs on structured output to show we will follow best practices. For fallback, we can also consider a small local model (Gemini Ultra via Vertex AI, or LLaMA2) if offline needed, but with less capability. We assume internet.
+
+- **Deployment:** *Cloud Run* (container), or *Vercel* (serverless). Cloud Run integrates well with Node + Supabase + Google AI, supports Docker (so build environment with necessary SDKs). Heroku (now defunct), Azure Functions, AWS Lambda (cold start issues with large libs). Cloud Run auto-scales, HTTPS, and easy secret management via Google Secret Manager. We’ll use Cloud Run on Google Cloud for consistency with Gemini API.
+
+- **Authentication/Hosting:** Use Supabase Auth (email/password, OIDC) or integrate NextAuth/Clerk. It stores users in Postgres. Next.js could be used for frontend if wanting fullstack integration (React + backend API in one), but challenge suggested React+Node, so likely separate.
+
+**Table: Stack Trade-offs**
+
+| Layer      | Option              | Pros                                | Cons                                 |
+|------------|---------------------|-------------------------------------|--------------------------------------|
+| Frontend   | React+TS           | Popular, component-driven, mature ecosystem. Rich UI libs (AntD, MUI) have built-in accessibility. TypeScript catches errors early. | Bundle size (mitigate with code-splitting), initial learning. |
+|            | Vue/Angular        | Vue: simpler reactivity; Angular: built-in MVC structure, CLI. Angular heavy and more opinionated. | Vue less corporate usage than React; Angular steep for small team. |
+| Backend    | Node.js/Express    | JavaScript continuity; wide module ecosystem (npm); async I/O suited to API calls to LLM; easy to containerize. | Single-threaded, callback pitfalls (use async/await to mitigate). |
+|            | Python/Flask/Django | Python has AI libs; Django has admin UI, ORM. Easier numeric processing. | Switching languages; deploying separate systems; sometimes slower on I/O (but often fine). |
+| AI         | Google Gemini (PaLM 3) | Structured output (JSON schema) support; Google’s grounding tools; free tier on GCP. | May have rate limits; newer model so less public benchmarking vs GPT-4. |
+|            | OpenAI GPT-4       | High-quality outputs; mature API; function calling. | Costly at scale, API keys, potential token limits (4096 or 32k). |
+|            | Claude             | Strong at following instructions; free Dev tier. | Less standardized output format, newer API. |
+| Persistence| Supabase/Postgres  | SQL for structured data; built-in Auth/Row Security; free tier. | Slightly more setup; SQL complexity vs NoSQL. |
+|            | Firebase/Firestore | Auto-scaling; easy setup; real-time DB. | No native SQL, tricky complex queries; costs can rise unexpectedly. |
+| Deployment | Google Cloud Run   | Scalable containers; integrates with GenAI API; includes logging/monitoring. | Slight cold-start for infrequent functions; requires GCP familiarity. |
+|            | Vercel/Netlify     | Easy React deployment; built-in CI; serverless functions support. | Harder to integrate custom Docker or connect to some APIs (though possible); less control over infra. |
+
+*(Sources: Official docs and community comparisons.)*
+
+Based on balance, **React+TypeScript + Node on Cloud Run + Supabase + Gemini API** fits well. React and Supabase both support accessibility and security best practices. Gemini’s structured JSON schema support reduces post-processing (see [35], [37]). However, any stack choice requires rigorous testing (later).
+
+## 5. Prompt Engineering & Agent Workflow
+
+We will use careful prompt design and possibly an “agent” flow:
+
+- **Structured Prompts:** For generating plans, define a JSON schema (e.g. {tasks: [{name, date, owner}], budget: {categories...}, timeline: [...]}). Use Gemini’s `response_format` to enforce this schema. Provide clear system-level instructions like:
+  ```
+  System: "You are an AI event planner. Output JSON with keys 'tasks', 'timeline', 'budget'. The tasks array should list actionable items with a 'due_date', and 'owner'. The timeline should order major milestones. The budget should list categories with amounts. Do not fabricate data; use only given inputs or cite sources if estimating costs."
+  ```
+  This follows Google’s best practice: *clear descriptions and strong typing*. By defining types (string, number, enum) we guide Gemini to output parsable JSON. Always validate after receiving output (e.g. check sum of budget equals total budget).
+
+- **Few-shot and Examples:** Provide examples in the prompt if needed (e.g. a mini-example of a conference plan with JSON). This ensures the model understands format. Or use an “agent” pattern: chain of tasks (e.g. agent1 extracts event info, agent2 generates tasks, agent3 creates budget).
+
+- **Iterative Refinement:** Implement a loop where user feedback triggers new prompts. For example, if the user changes guest count, send an updated prompt like: “The event now has 10% more guests; adjust tasks and costs accordingly.” The system could either re-run the full JSON generation with updated inputs, or intelligently patch the previous output. Using structured output and diffing can help: parse old JSON, adjust values, ask AI to recheck.
+
+- **Verification Guardrails:** We must avoid hallucinations. Techniques:
+  - *Prohibitive language:* e.g. “If uncertain, leave fields empty or say ‘TBD’, do not make up vendors.” 
+  - *Tool APIs:* For vendors, if allowed, we could call Google Places API to get real venues by city (to ensure correctness) rather than asking LLM. If that’s overkill, restrict to generic suggestions.
+  - *Post-check:* Always code-validate the JSON. If any numeric field is missing or wildly off, flag for manual handling. This aligns with Gemini’s advice to *validate semantic correctness*.
+  - *Fallback messages:* If AI output fails schema or logic, catch the error and either retry with a clearer prompt or ask user for missing info.
+
+- **Agent Workflow Patterns:** We may implement multiple prompts in sequence:
+  1. **Extraction Agent:** Summarize user inputs (date, type, preferences).
+  2. **Plan Generator:** Given extracted inputs, generate initial plan JSON (tasks, budget).
+  3. **Refinement Agent:** On user edits (via chat or UI), revise relevant sections.
+  4. **Domain Agent:** Optional – check plan against event constraints (e.g. “is the budget per head realistic?”).
+  
+  Alternatively, a single-turn approach might suffice: the frontend sends all inputs to the LLM at once, gets JSON, and stores it. Then any change repeats the JSON generation call. Simpler, but the “agent” approach (chaining calls, or using function calling) can modularize and reuse partial results. Given time limits, a one-shot structured query is acceptable.
+
+- **Avoiding Vendor Misinfo:** If we include vendor suggestions, use explicit instructions like: “only suggest actual vendor categories or websites (no random names).” We can provide one example vendor with source formatting. Or skip LLM for actual names and just present categories (“caterer, DJ, venue”) with placeholders.
+
+In all cases, we’ll log the prompts and model responses (for post-hoc analysis). This log can be sanitized and presented in the LinkedIn write-up to show prompt evolution (see section 9).
+
+## 6. Testing, Verification and CI/CD
+
+To ensure reliability and alignment with quality criteria:
+
+- **Automated Tests:** 
+  - *Unit Tests:* For all data-processing logic. E.g. if we write code to assign tasks or adjust budget, write tests (Jest or Mocha). Also test any pure functions (e.g. function that rebuilds schedule after a date change). 
+  - *Integration Tests:* Mock the LLM (with fixed JSON) and test end-to-end plan creation. For example, use a stub that returns known JSON, and verify the front-end renders correctly.
+  - *AI Output Tests:* We can write tests that feed a fixed prompt to the LLM (if mocking is allowed) and verify the JSON schema. For example, prompt with trivial event and assert the returned “tasks” list matches expected format. Or we simulate the AI using a mock function that returns pre-built output and see if our parser handles it.
+  - *End-to-End (E2E) Tests:* Use Cypress or Playwright to simulate a user creating an event on the UI, then editing it. Verify UI elements appear and final plan meets expectations. For example, test that increasing guest count triggers recalculation.
+  - *Accessibility Tests:* Use tools like axe-core or Lighthouse CI to catch violations (missing alt tags, low contrast, no keyboard focus). These can be integrated in CI.
+  - *Security Checks:* Run static analysis (ESLint with security plugins), and OWASP top 10 vulnerability scans (e.g. Snyk). Ensure input sanitization to prevent XSS/Injection (e.g. event name field). Use helmet.js for HTTP headers. Verify HTTPS enforced.
+
+- **CI/CD Pipeline:** 
+  - Set up a GitHub Actions or Google Cloud Build pipeline triggered on push/PR. Steps:
+    1. Lint and test (fail CI if coverage < X%).
+    2. Build Docker image and run security scanning (like Trivy).
+    3. Deploy to staging if tests pass.
+  - End-to-end tests could be run on a preview deploy. After merging, auto-deploy to production Cloud Run.
+  - Ensure secrets (API keys) are managed via environment variables or Google Secret Manager.
+  - Optional: Docker image scanning for known vulnerabilities.
+
+- **Manual QA:** While automated tests catch many issues, we should also manually verify that:
+  - The plan adapts correctly (simulate “week-of” event with late start as easy-peasy says).
+  - There are no glaring hallucinations (check output for realism).
+  - UI behaves on mobile and desktop.
+
+This comprehensive testing approach directly addresses “testing and accessibility” scoring criteria, and helps ensure “code quality” and “security”. For example, gemini’s docs explicitly advise validating outputs; we follow that with both tests and runtime checks.
+
+## 7. Unique Module: Adaptive Budget Adjustment
+
+**Concept:** A “Budget Simulator” module where the user can dynamically adjust the budget (or guest count) and see the plan update. This goes beyond static plan generation by providing immediate “what-if” analysis. For example, a slider or input field lets the user lower the budget by 10%; the system then rebalances tasks (e.g. suggests cheaper vendors, postpones non-essentials). This gives clear user value (financial planning) and is not commonly seen in existing apps.
+
+**Spec:** 
+- **Data Model:** Extend the event schema to tag each task/item with a *cost* or *cost per guest*. For example, tasks related to catering have variable cost depending on guest count; venue rental might be fixed. Store a base cost for each budget line, and a multiplier (e.g. per-person cost). Also maintain *priority levels* or categories (mandatory vs optional tasks).
+- **UI:** Display a slider or input box labeled “Budget (adjust)”. Also an optional guest-count adjustment. When changed, show real-time suggestions below (e.g. “Suggestions to meet new budget:”).
+- **Function:** When the user adjusts the budget, two possible approaches:
+  1. **Rule-based update:** If budget decreases, algorithmically mark lowest-priority tasks as postponed or removed (e.g. drop “photo booth rental” if budget tight), and recalc totals. Or reduce per-guest items.
+  2. **AI-driven update:** Send a new prompt to the LLM: 
+     ```
+     "The total budget was ${old}, now it is ${new}. Adjust the above plan to fit the new budget. List any tasks to remove or scale back, and new budget breakdown."
+     ```
+     The AI returns an updated JSON (leveraging the same schema) where some tasks may be missing or costs changed. Then update the UI accordingly.
+- **Verification:** Since this can produce unexpected changes, ensure fallback: e.g. if the AI output is illogical (missing required tasks), prompt again or alert user. Also ensure the recalculated totals match the user’s budget.
+
+**UI Mock Behavior:** Imagine the budget slider at bottom of plan. User drags it downward; the system grays out some tasks and shows a note: “We suggest postponing XYZ or reducing headcount at venue to meet the new budget.” Possibly a table listing original vs new costs. Color-code changes (green savings, red overrun).
+
+**AI Prompts:** For full AI approach, the prompt might use the previously generated plan’s JSON as context. Example:
+```
+"You are an AI event planner. The original plan (given as JSON) was for a $30,000 budget. The user now has $25,000. Modify the plan to fit $25,000: you may remove non-essential tasks, suggest cheaper alternatives, and adjust quantities. Output updated JSON (same format)."
+```
+This uses structured output again (Gemini) and we must again validate. The suggestion uses cross-reference to original plan. We may feed the plan JSON to the model either in the prompt or as part of a function call (if using function calling in GPT-4).
+
+**Novelty:** This goes beyond static plan by treating the plan as dynamic data that AI can re-evaluate. It demonstrates genuine AI utility (scenario analysis) beyond normal templates. It also ties into the “AI agent” idea: essentially we ask the AI to optimize the plan for new constraints. A similar concept might exist in some enterprise tools (budget simulators), but it’s rare in DIY event planners.
+
+## 8. Risks, Ethics and Mitigation
+
+- **Fabricated Information:** LLMs can hallucinate vendor names, prices, or dates. To mitigate:
+  - Use structured JSON prompts and validation to catch anomalies.
+  - Avoid relying on AI for exact prices; treat any cost as an estimate. Possibly present costs with “approx.” or ask the model to add “Disclaimer: Estimates only.” in output.
+  - If vendor suggestions are used, cross-check or cite sources (e.g. a link or note “as of [date]”). Better, use actual API data (Google Places, Yelp, etc.) for accuracy, with disclaimers like “availability not guaranteed”.
+  - Include an UI disclaimer: “This tool provides suggestions. Always confirm details with suppliers.”
+
+- **Privacy of User Data:** Event details (dates, guest lists) are personal. We should minimize data collection: only store necessary fields. Use secure auth (hashed passwords/Tokens). Use HTTPS for all transport. If storing emails or addresses, encrypt or secure them. Follow GDPR by giving users a way to delete their plan/account. (No citation needed, but a nod to data minimisation).
+
+- **Bias and Cultural Sensitivity:** AI may suggest culturally biased ideas (e.g., not recognizing certain religious customs) or reinforce stereotypes (e.g. “festivities” for a religious event). Mitigation:
+  - Prompt the AI to be culturally neutral and ask the user specifics (if needed). 
+  - Ensure any content generation (e.g. speeches) can be edited by user. Possibly include a user prompt like “If this event has cultural significance, please specify.”
+  - Do not make assumptions (for example, don’t assume a wedding cake, etc., without user mention).
+
+- **Accessibility/Ethics:** Ensure that all generated content (text) does not use offensive or private content inadvertently. Filter outputs via a profanity or bias-checker if possible. Use inclusive language.
+
+- **Security:** As with any web app, guard against injection (though most data is text). Sanitize all inputs/outputs. Regularly update dependencies. If using external APIs, keep keys secret. Our CI pipeline can run vulnerability scans.
+
+- **Dependency on AI:** Ensure the user is aware this is an assistant, not a definitive planner. Include a “chain of trust” message: “This plan was generated with AI – please verify all recommendations.” This transparency is good practice (and aligned with Google’s AI Principles on accountability).
+
+Reference [27] emphasizes that **“hallucinations”** can mislead users. By treating AI output as *guidance*, and including human-in-the-loop review, we address this ethical concern. Structured prompting and validation also align with “cross-reference with verified info” advice.
+
+## 9. Implementation Roadmap
+
+Below is a 6–8 step plan for a solo developer, estimated ~10–12 business days. Each step can overlap if resources allow.
+
+```mermaid
+gantt
+    title Implementation Roadmap (Solo Developer)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d %b
+    section Setup
+    Project Setup & Tech Research       :done,   a1, 2026-11-01, 1d
+    section Core Development
+    Data Model & Authentication         :a2,     after a1, 2d
+    Basic UI (Event Form, Plan View)    :a3,     after a2, 3d
+    AI Plan Generation Integration      :a4,     after a3, 3d
+    Budget/Timeline Logic & Adjustments :a5,     after a4, 2d
+    Unique Module (Budget Simulator)    :a6,     after a5, 2d
+    section Testing & Deployment
+    Testing Suite & CI/CD Pipeline      :a7,     after a6, 2d
+    Final Polish & Documentation        :a8,     after a7, 1d
+```
+
+- **Project Setup & Tech Research (1d):** Install tooling (Node, React), set up Git repo, subscribe to Gemini API, and outline schema and directory structure.
+- **Data Model & Auth (2d):** Define DB schema (events, tasks, users, budgets). Implement Supabase or Postgres connection. Set up user accounts and login flows. Seed sample data.
+- **UI (3d):** Build the main pages: event creation form, and planning dashboard. Use React (with a UI library) for forms with validation, and a layout for plan (tabs or sections for Tasks, Timeline, Budget).
+- **AI Integration (3d):** Write backend API to call Gemini (or chosen LLM). Develop prompt templates (with JSON schema). Connect form submission to LLM call and parse JSON response. Display tasks/timeline/budget in UI.
+- **Budget/Timeline Logic (2d):** Implement logic for adjusting timelines (e.g. convert dates) and tying tasks to budget. Ensure changing a date recalculates relative deadlines. Add ability to edit a task and see updates. 
+- **Unique Module (2d):** Develop the adaptive budget feature: UI slider + handler, prompt or algorithm to adjust plan. Integrate suggestions panel. Test with extreme values.
+- **Testing & CI/CD (2d):** Write unit tests for components and logic. Set up Cypress for one E2E flow. Integrate Github Actions or Cloud Build (lint, tests, deploy). Add accessibility tests (axe).
+- **Final Polish & Documentation (1d):** Fix any UI issues, write a README, developer docs and prepare submission summary. Ensure code is clean and well-commented.
+
+This schedule totals ~14 days. It allows iterative overlap (e.g. writing tests as features complete) to tighten timeline.
+
+## 10. LinkedIn Submission Content
+
+For the PromptWars LinkedIn post (AI demo log and reflection), we should highlight:
+- **Initial Prompt & AI Usage:** Example: “Started by instructing the AI (Gemini) with a clear schema-based prompt: e.g. _‘Generate a JSON event plan with tasks (name, due_date, owner), timeline, and budget for [inputs]._’ Initial runs produced generic tasks. I refined the prompt to include the actual event details and question-specific instructions (e.g. ‘Focus on corporate team-building event’). I also added 'Do not hallucinate vendor names'. This improved accuracy of tasks (owner and category fields appeared as intended).”
+
+- **Prompt Evolution:** Show before/after. E.g. *Before*: “Plan a corporate workshop…”. *After*: “Plan a corporate offsite for 25 people in Austin on 2027-04-01, with a $15k budget… Output JSON schema.” Mention adding examples or enforcing structure via the Google API’s `response_format`. 
+- **AI as Assistant:** “The AI generated the core plan in seconds (see screenshot), but I realized it sometimes gave impossible dates (hallucinated) or rounding errors. So I added output validation and re-ran for corrections (this followed best practice from Gemini docs).”
+- **Coding & Tools:** Highlight how React UI components were built to render the AI’s JSON (show a snippet of the React code mapping tasks to checklist items). Mention use of Supabase for persistence (optional detail).
+- **Unique Feature Example:** “One feature I’m proud of is the **Budget Slider** – dragging the budget automatically updates the plan. Under the hood, this calls the AI again with a new prompt: e.g. _‘Reduce the budget by 10% and suggest which tasks to cut or adjust’_. The AI returns an updated JSON plan, which we render. This was a fun use of generative AI for scenario analysis, beyond static planning.”
+- **Metrics/Results:** If feasible, mention any numbers (e.g., “Our tests cover 95% of code paths”, or “Browser tests confirmed keyboard navigation on all pages”).
+- **Future Work:** Briefly note ideas (e.g. the seating chart or multi-language interface we didn’t implement yet).
+- **Prompt Log:** Optionally, share sanitized excerpts of prompts and responses (screen-grab of terminal or code block). This demonstrates “genuine AI usage” and how prompts were refined.
+
+In summary, the LinkedIn content should tell the story: *setting the task, initial AI prompt and output, identified issues, prompt fixes, code integration, final result*. This narrative shows we actually worked with LLMs iteratively rather than just claiming. It should emphasise the credible improvements (like schema enforcement, error checking) which align with advice from Gemini docs and AI ethics.
+
+**Sources:** This report cites official product sites and documentation to ground recommendations in reality. These inform both the feature set (e.g. tasks/timeline outputs) and the technical guidelines (structured prompts, hallucination mitigation). All code and diagrams above are original, designed to meet the PromptWars criteria.
+
